@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>When AI Agents Go Rogue</title>
-  <meta name="description" content="A final project exploring how autonomous AI agents fail, why it happens, and how we keep them in check.">
+  <meta name="description" content="An interactive look at real, documented cases of AI agents acting in ways their developers didn't intend. DSC 106 final project.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d12'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23ff4d6d'%3E%3E_%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,98 +17,169 @@
       <a href="#top" class="logo">rogue<span class="accent">.agents</span></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
       <ul class="nav-links">
-        <li><a href="#what">What is an agent?</a></li>
-        <li><a href="#failures">How they go rogue</a></li>
-        <li><a href="#cases">Case studies</a></li>
-        <li><a href="#safeguards">Safeguards</a></li>
+        <li><a href="#quiz">Human or AI?</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#hacking">AI hacking</a></li>
+        <li><a href="#behaviors">Behaviors</a></li>
+        <li><a href="#trust">Would you trust it?</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
       <p class="terminal-line" id="typed" aria-hidden="true"></p>
       <h1>When AI Agents <span class="glitch" data-text="Go Rogue">Go Rogue</span></h1>
-      <p class="lede">AI systems are no longer just answering questions — they browse, write code, send emails, and take actions on our behalf. What happens when they do something we didn't intend?</p>
-      <a href="#what" class="btn">Start exploring &darr;</a>
+      <p class="lede">AI systems no longer just answer questions. They browse the web, write and run code, and use passwords on our behalf. Sometimes they do things nobody asked them to.</p>
+      <p class="lede small">Every story on this page is real and sourced. Let's start with a game.</p>
+      <a href="#quiz" class="btn">Play: Human or AI? &darr;</a>
     </section>
 
-    <section id="what" class="section">
-      <h2>What is an AI agent?</h2>
-      <p>An <strong>AI agent</strong> is a system built around a language model that can pursue a goal over multiple steps: it plans, calls tools (search, code execution, file access, APIs), observes the results, and decides what to do next — often with little or no human review between steps.</p>
-      <div class="cards three">
-        <div class="card"><h3>Perceive</h3><p>Reads inputs: user instructions, web pages, documents, tool outputs.</p></div>
-        <div class="card"><h3>Decide</h3><p>The model reasons about which action moves it closer to its goal.</p></div>
-        <div class="card"><h3>Act</h3><p>Executes real actions in the world — and those actions have consequences.</p></div>
+    <!-- QUIZ -->
+    <section id="quiz" class="section">
+      <p class="eyebrow">Part 1</p>
+      <h2>Human or AI?</h2>
+      <p class="section-lede">Each story below really happened. Some were carried out by human hackers. Others were done by AI agents that chose the action themselves. Can you tell which is which?</p>
+
+      <div class="quiz-card" id="quiz-card" aria-live="polite">
+        <div class="quiz-top">
+          <span class="quiz-progress" id="quiz-progress"></span>
+          <span class="quiz-score" id="quiz-score"></span>
+        </div>
+        <p class="quiz-story" id="quiz-story"></p>
+        <div class="quiz-choices" id="quiz-choices">
+          <button class="choice" data-answer="human"><span class="choice-icon">&#128100;</span> A human hacker</button>
+          <button class="choice" data-answer="ai"><span class="choice-icon">&#129302;</span> An AI agent</button>
+        </div>
+        <div class="quiz-reveal" id="quiz-reveal" hidden>
+          <p class="verdict" id="quiz-verdict"></p>
+          <div class="badges" id="quiz-badges"></div>
+          <p id="quiz-explain"></p>
+          <p class="quiz-links" id="quiz-links"></p>
+          <button class="btn" id="quiz-next">Next story &rarr;</button>
+        </div>
+        <div class="quiz-end" id="quiz-end" hidden>
+          <p class="big-score" id="quiz-final"></p>
+          <p id="quiz-final-text"></p>
+          <div class="quiz-end-actions">
+            <a href="#timeline" class="btn">See the data &darr;</a>
+            <button class="btn ghost" id="quiz-restart">Play again</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="failures" class="section alt">
-      <h2>How agents go rogue</h2>
-      <p>"Rogue" rarely means a sci-fi villain. It usually means an agent pursuing its objective in a way its designers didn't anticipate. Common failure modes:</p>
-      <div class="cards two">
-        <div class="card"><h3>Specification gaming</h3><p>The agent satisfies the literal goal while missing its intent — e.g. making tests pass by deleting the tests.</p></div>
-        <div class="card"><h3>Prompt injection</h3><p>Malicious instructions hidden in a web page, email, or file hijack the agent and redirect its actions.</p></div>
-        <div class="card"><h3>Excessive agency</h3><p>The agent has more permissions than it needs, so a small mistake becomes a big one.</p></div>
-        <div class="card"><h3>Goal misgeneralization</h3><p>Behavior learned in training carries over to new situations in ways that no longer serve the real goal.</p></div>
-        <div class="card"><h3>Compounding errors</h3><p>Small mistakes early in a long task snowball because no human checks intermediate steps.</p></div>
-        <div class="card"><h3>Deception &amp; sandbagging</h3><p>Research has explored whether models might misreport what they did or underperform on evaluations.</p></div>
+    <!-- TIMELINE -->
+    <section id="timeline" class="section alt">
+      <p class="eyebrow">Part 2</p>
+      <h2>The incidents are piling up</h2>
+      <p class="section-lede">Each dot is one unique incident of an AI system acting in a way its developers didn't intend, placed in the month it happened. <span class="key testing">Blue</span> dots were caught in lab tests. <span class="key public">Orange</span> dots happened in the real world. Drag the slider to watch them pile up, then hover over a dot to preview it or click it to read the full story.</p>
+
+      <div class="counter-row">
+        <div class="counter"><span class="counter-num" id="count-total">0</span><span class="counter-label">incidents so far</span></div>
+        <div class="counter testing"><span class="counter-num" id="count-testing">0</span><span class="counter-label">in lab tests</span></div>
+        <div class="counter public"><span class="counter-num" id="count-public">0</span><span class="counter-label">in the real world</span></div>
+      </div>
+
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Filter incidents" data-filter-group="timeline">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="testing">Lab tests</button>
+          <button data-filter="public">Real world</button>
+        </div>
+        <div class="scrubber">
+          <button class="play" id="play" aria-label="Play timeline">&#9654;</button>
+          <input type="range" id="month-slider" min="0" max="0" value="0" aria-label="Show incidents through month">
+          <span class="slider-label" id="slider-label"></span>
+        </div>
+      </div>
+      <div class="chart" id="timeline-chart"></div>
+      <p class="chart-note" id="timeline-note"></p>
+    </section>
+
+    <!-- HACKING -->
+    <section id="hacking" class="section">
+      <p class="eyebrow">Part 3</p>
+      <h2>The rise of AI hacking</h2>
+      <p class="section-lede" id="hacking-lede">Some of the most alarming incidents involve AI agents breaking into systems they weren't supposed to touch. This chart keeps a running total of incidents tagged <em>unauthorized access</em> or <em>cybersecurity</em>.</p>
+      <div class="chart" id="hacking-chart"></div>
+      <p class="chart-note">Running total of unique incidents by the month they happened. Hover over the chart to see the totals for any month. The dataset covers years before 2026 thinly, so earlier periods are undercounted.</p>
+    </section>
+
+    <!-- BEHAVIORS -->
+    <section id="behaviors" class="section alt">
+      <p class="eyebrow">Part 4</p>
+      <h2>What does "going rogue" look like?</h2>
+      <p class="section-lede">Most documented misbehavior is <strong>cheating</strong>: models gaming the tests they're scored on. Hacking-type behaviors stand out in a different way, because they show up <strong>at least as often in the real world as in lab tests</strong>. Click any bar to list the incidents behind it.</p>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Filter behaviors" data-filter-group="behaviors">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="testing">Lab tests</button>
+          <button data-filter="public">Real world</button>
+        </div>
+        <div class="seg" role="group" aria-label="Sort behaviors" id="behavior-sort">
+          <button class="active" data-sort="total">Sort: total</button>
+          <button data-sort="public">Sort: real-world share</button>
+        </div>
+      </div>
+      <div class="chart" id="behavior-chart"></div>
+      <p class="chart-note">Unique incidents tagged with each behavior. Tags overlap, so one incident can count in several rows. Test results are not the same as real-world events.</p>
+      <div class="incident-list" id="behavior-list" hidden></div>
+
+      <h3 class="sub-h">Behaviors that show up together</h3>
+      <p class="section-lede">Many incidents involve more than one behavior. Each cell counts the incidents tagged with both behaviors. Cybersecurity and unauthorized access go together most often, and cheating often travels with deception. Click a cell to list those incidents.</p>
+      <div class="chart" id="heatmap-chart"></div>
+      <div class="incident-list" id="heatmap-list" hidden></div>
+    </section>
+
+    <!-- CAVEAT -->
+    <section class="section caveat-wrap">
+      <div class="caveat">
+        <h3>A note before you panic</h3>
+        <p>More reports doesn't automatically mean worse AI. Much of the jump in 2026 comes from AI labs publishing more detailed safety reports and from researchers actively hunting for these behaviors. The dataset also covers earlier years thinly. Most incidents here were caught in <strong>controlled tests designed to provoke them</strong>. That's the system working: finding problems before they cause harm. Still, a growing share were caught in the real world.</p>
       </div>
     </section>
 
-    <section id="cases" class="section">
-      <h2>Case studies</h2>
-      <p class="note">TODO: Add real, cited incidents and research findings here. Each case should include what happened, why, and what was learned.</p>
-      <div class="timeline">
-        <article class="case">
-          <span class="case-tag">Case 01</span>
-          <h3>[Title of incident]</h3>
-          <p>[What happened, the failure mode involved, and the outcome.]</p>
-          <p class="source">Source: [citation]</p>
-        </article>
-        <article class="case">
-          <span class="case-tag">Case 02</span>
-          <h3>[Title of incident]</h3>
-          <p>[What happened, the failure mode involved, and the outcome.]</p>
-          <p class="source">Source: [citation]</p>
-        </article>
-        <article class="case">
-          <span class="case-tag">Case 03</span>
-          <h3>[Title of incident]</h3>
-          <p>[What happened, the failure mode involved, and the outcome.]</p>
-          <p class="source">Source: [citation]</p>
-        </article>
-      </div>
+    <!-- TRUST -->
+    <section id="trust" class="section alt">
+      <p class="eyebrow">Part 5</p>
+      <h2>Would you trust AI to run critical infrastructure?</h2>
+      <p class="section-lede">Power grids, hospitals, water systems. Companies and governments are already deciding how much control to hand AI agents. Where would you draw the line? Pick a level and weigh the evidence.</p>
+      <div class="trust-scale" id="trust-scale" role="radiogroup" aria-label="How much control should AI have?"></div>
+      <div class="trust-panel" id="trust-panel" hidden></div>
     </section>
 
-    <section id="safeguards" class="section alt">
-      <h2>Keeping agents in check</h2>
-      <ul class="checklist">
-        <li><strong>Least privilege</strong> — give agents only the tools and access they actually need.</li>
-        <li><strong>Human in the loop</strong> — require approval for irreversible or high-stakes actions.</li>
-        <li><strong>Sandboxing</strong> — run agents in isolated environments where mistakes are contained.</li>
-        <li><strong>Treat inputs as untrusted</strong> — content from the web or files is data, not instructions.</li>
-        <li><strong>Monitoring &amp; logging</strong> — record every action so problems can be detected and audited.</li>
-        <li><strong>Evaluation &amp; red-teaming</strong> — deliberately try to break agents before deploying them.</li>
-      </ul>
-    </section>
-
+    <!-- ABOUT -->
     <section id="about" class="section">
       <h2>About this project</h2>
-      <p>This site is a final project for <strong>[Course name]</strong>. TODO: add team members, course info, and acknowledgements.</p>
-      <h3>References</h3>
-      <ol class="refs">
-        <li>[Reference 1]</li>
-        <li>[Reference 2]</li>
-      </ol>
+      <p>A final project for <strong>DSC 106: Introduction to Data Visualization</strong> at UC San Diego.</p>
+      <p><strong>Team:</strong> Matthew Ramos, Mayur Nookala, Ethan Cai</p>
+      <h3 class="sub-h">Data</h3>
+      <p id="about-data">Incident data comes from <a href="https://misalignmentwatch.com/data" target="_blank" rel="noopener">AI Misalignment Watch</a>, a public collection of reports about AI systems acting in ways their developers didn't intend. We group the reports into unique incidents and count each incident once. "Lab test" means the incident happened in a controlled test or evaluation. "Real world" means the dataset classifies it as a public incident. The human-hacker stories in the quiz come from Wikipedia and its cited sources.</p>
+      <h3 class="sub-h">Built with</h3>
+      <p><a href="https://d3js.org" target="_blank" rel="noopener">D3.js</a> and plain HTML/CSS/JS, hosted on GitHub Pages.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 When AI Agents Go Rogue &middot; Final Project</p>
+    <p>When AI Agents Go Rogue &middot; DSC 106 Final Project &middot; 2026</p>
   </footer>
 
+  <!-- Shared tooltip + incident drawer -->
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawer-title" tabindex="-1">
+    <button class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
+    <div id="drawer-body"></div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="js/quiz-data.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/trust.js"></script>
 </body>
 </html>
