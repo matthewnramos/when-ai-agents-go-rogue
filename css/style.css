@@ -166,6 +166,34 @@ button { font: inherit; color: inherit; }
 .dot.testing { background: var(--testing); }
 .dot.public { background: var(--public); }
 
+/* ---------- Who told us? (sources chart) ---------- */
+.guess { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 12px; padding: 20px 24px; max-width: 820px; margin-bottom: 36px; }
+.guess-tag { display: block; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 6px; }
+.guess-q { font-size: 1.08rem; }
+.guess-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 14px; }
+.guess-row input { flex: 1; min-width: 160px; accent-color: var(--accent); }
+.guess-row output { font-family: var(--mono); font-size: 0.95rem; min-width: 76px; font-variant-numeric: tabular-nums; }
+.guess-row .btn { align-self: center; }
+.guess-row .btn:disabled { opacity: 0.45; cursor: default; filter: none; }
+.guess-result { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); color: var(--muted); }
+.guess-result strong { color: var(--text); }
+.src-head { min-height: 112px; max-width: 860px; margin-bottom: 14px; }
+.chart .src-row-name { fill: var(--text); font-size: 13px; font-weight: 600; }
+.chart .src-row-count { fill: var(--text); font-size: 15px; font-weight: 800; }
+.chart .src-block-label .n { fill: var(--text); font-weight: 700; }
+.chart .src-note .strong { fill: var(--text); font-size: 13px; font-weight: 700; }
+.src-legend { margin-top: 8px; }
+.src-swatch { display: inline-block; width: 22px; height: 12px; border-radius: 6px; background: color-mix(in srgb, var(--text) 17%, transparent); margin-right: 6px; vertical-align: -1px; }
+.tt-by { color: var(--text); }
+.src-table { margin-top: 14px; max-width: 540px; font-size: 0.88rem; color: var(--muted); }
+.src-table summary { cursor: pointer; }
+.src-table table { width: 100%; border-collapse: collapse; margin-top: 10px; font-variant-numeric: tabular-nums; }
+.src-table th, .src-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: right; font-weight: 400; }
+.src-table th:first-child { text-align: left; }
+.src-table thead th, .src-table tbody th { color: var(--text); }
+.src-table thead th, .src-table tfoot th, .src-table tfoot td { font-weight: 600; }
+.src-table tfoot th, .src-table tfoot td { color: var(--text); border-bottom: 0; }
+
 /* ---------- Caveat ---------- */
 .caveat-wrap { padding-top: 64px; padding-bottom: 64px; }
 .caveat { border: 1px solid var(--border); border-left: 4px solid var(--public); border-radius: 12px; padding: 24px 28px; background: var(--surface); max-width: 820px; }
