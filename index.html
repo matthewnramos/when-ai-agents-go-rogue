@@ -22,6 +22,7 @@
         <li><a href="#story">The story</a></li>
         <li><a href="#explore">Explore</a></li>
         <li><a href="#trust">Would you trust it?</a></li>
+        <li><a href="#writeup">Writeup</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
@@ -217,6 +218,20 @@
       </div>
       <div class="trust-scale" id="trust-scale" role="radiogroup" aria-label="How much control should AI have?"></div>
       <div class="trust-panel" id="trust-panel" hidden></div>
+    </section>
+
+    <!-- PROTOTYPE WRITEUP -->
+    <section id="writeup" class="section">
+      <p class="eyebrow">Prototype writeup</p>
+      <h2>Where the project stands</h2>
+
+      <h3 class="sub-h">What have you done so far?</h3>
+      <p>So far, we've settled on the AI Misalignment Watch dataset and got a working prototype of the whole page live on GitHub Pages from our public repo. First, we had to clean up duplicates in the raw data: the dataset comes as 447 reports and a table of 183 incidents, and the same incident can show up in more than one report, so we wrote a Python script that merges the two into a single record per incident.</p>
+      <p>From there, we built out the full structure of the page. Readers start with a nine-story quiz where they guess whether a human hacker or an AI agent was behind each real case, then move through three scrollytelling chapters, an interactive explore section, and a closing question on trust. In the scrollytelling chapters, we keep the chart pinned while those 183 dots rearrange from a grid into a lab-test vs. real-world split and then a monthly timeline, before moving into AI hacking, the different behavior types, and how often they show up together. The explore section is working too: you can filter lab tests vs. real-world incidents, scrub or play through the months, re-sort the behavior bars, and click any dot, bar, or heatmap cell to read the actual incidents behind it. Every number in the text is also calculated directly from the data file when the page loads, so we can refresh the dataset later without updating stats by hand.</p>
+
+      <h3 class="sub-h">What will be the most challenging part of your project to design, and why?</h3>
+      <p>The trickiest part to get right will be showing the huge 2026 spike without misleading the reader. Right now, 167 out of our 183 incidents come from 2026. On a plain timeline, it looks like AI suddenly started going rogue this year, when a lot of that jump is really about reporting: labs and outside evaluators put out a lot more safety reports in 2026, while the dataset's coverage of earlier years is pretty thin. At the moment we just have a note under the charts explaining this, and we don't think that's enough. Most people will remember the dramatic spike and skip the caption, so we want the chart itself to show what's going on, for example by revealing who first reported each incident and how many of the dots come from just a handful of big reports.</p>
+      <p>Another challenge is that every dot currently has the same size and weight, whether it's a model cheating on a benchmark in a test or an agent damaging a real system. The dataset has rule-based severity scores, so we still need to figure out how much weight to give them and find a visual encoding that separates "caught in a test" from "caused real harm" at a glance. Finally, since the human hacker stories in our opening quiz come from outside the dataset, we have to pick them carefully so the comparison with the AI cases stays fair rather than feeling cherry-picked.</p>
     </section>
 
     <!-- ABOUT -->

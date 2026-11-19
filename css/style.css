@@ -74,8 +74,10 @@ button { font: inherit; color: inherit; }
 .section-lede { max-width: 760px; color: var(--muted); margin-bottom: 28px; }
 .section-lede strong { color: var(--text); }
 .sub-h { font-size: 1.35rem; margin: 56px 0 10px; }
-#about p { max-width: 760px; color: var(--muted); margin-bottom: 12px; }
+#about p, #writeup p { max-width: 760px; color: var(--muted); margin-bottom: 12px; }
 #about strong { color: var(--text); }
+#writeup { border-top: 1px solid var(--border); }
+#writeup .sub-h { max-width: 760px; }
 
 .key { font-weight: 600; }
 .key.testing { color: var(--testing); }
