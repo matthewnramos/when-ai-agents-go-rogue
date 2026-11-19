@@ -363,20 +363,34 @@ App.ready.then((data) => {
     const show = () => (out.textContent = `${range.value} of ${pub.length}`);
     range.addEventListener("input", show);
     show();
+    const mark = document.getElementById("src-guess-mark");
+    const arrange = (view, filter) => {
+      state.view = view;
+      state.filter = filter;
+      press(viewSeg, "view", view);
+      press(filterSeg, "filter", filter);
+      render();
+    };
+    let revealed = false;
+    // one button: "Show me" reveals the answer, "Guess again" puts everything back
     btn.addEventListener("click", () => {
+      revealed = !revealed;
+      range.disabled = revealed;
+      result.hidden = !revealed;
+      mark.hidden = !revealed;
+      btn.textContent = revealed ? "Guess again" : "Show me";
+      btn.classList.toggle("ghost", revealed);
+      if (!revealed) return arrange("when", "all");
       const g = +range.value, answer = selfPub.length, off = g - answer;
       const verdict = Math.abs(off) <= 2 ? "Close." : off < 0 ? "More than you thought." : "Fewer than you thought.";
       const share = Math.round((answer / pub.length) * 100);
-      result.innerHTML = `You guessed <strong>${g}</strong>. It's <strong>${answer}</strong> of ${pub.length}, about ${share}%. ${verdict} ` +
-        `Most of what we know about AI misbehaving in real use comes from the labs' own reports.`;
-      result.hidden = false;
-      range.disabled = true;
-      btn.disabled = true;
-      state.view = "who";
-      state.filter = "public";
-      press(viewSeg, "view", "who");
-      press(filterSeg, "filter", "public");
-      render();
+      result.innerHTML = `<span class="guess-answer">${answer} of ${pub.length}</span>` +
+        `You guessed <strong>${g}</strong>. ${verdict} About ${share}% of the real-world incidents were first reported by the company that built the model, ` +
+        `so most of what we know about AI misbehaving in real use comes from the labs' own reports.`;
+      // mark the answer on the slider track (the thumb is about 16px wide)
+      mark.textContent = `answer: ${answer}`;
+      mark.style.left = `calc(8px + (100% - 16px) * ${answer / pub.length})`;
+      arrange("who", "public");
       head.title.scrollIntoView({ behavior: App.reducedMotion ? "auto" : "smooth", block: "nearest" });
     });
   }

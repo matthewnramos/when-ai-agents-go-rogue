@@ -212,7 +212,10 @@
       <div class="guess" id="src-guess">
         <p class="guess-q"><span class="guess-tag">Guess first</span>The dataset has <strong data-src="public"></strong> real-world incidents. For how many of them was the first report written by the same company that built the AI?</p>
         <div class="guess-row">
-          <input type="range" id="src-guess-range" min="0" max="1" step="1" value="0" aria-label="Your guess">
+          <div class="guess-slider">
+            <input type="range" id="src-guess-range" min="0" max="1" step="1" value="0" aria-label="Your guess">
+            <span class="guess-mark" id="src-guess-mark" hidden></span>
+          </div>
           <output id="src-guess-out" for="src-guess-range"></output>
           <button class="btn" id="src-guess-btn" type="button">Show me</button>
         </div>
