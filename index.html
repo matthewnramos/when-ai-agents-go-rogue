@@ -5,27 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>When AI Agents Go Rogue</title>
   <meta name="description" content="An interactive look at real, documented cases of AI agents acting in ways their developers didn't intend. DSC 106 final project.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d12'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23ff4d6d'%3E%3E_%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d12'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23ff4d6d'%3E%3E_%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
   <header class="site-header">
     <nav class="nav">
       <a href="#top" class="logo">rogue<span class="accent">.agents</span></a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
       <ul class="nav-links">
         <li><a href="#quiz">Human or AI?</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#hacking">AI hacking</a></li>
-        <li><a href="#behaviors">Behaviors</a></li>
+        <li><a href="#story">The story</a></li>
+        <li><a href="#explore">Explore</a></li>
         <li><a href="#trust">Would you trust it?</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- Chapter progress rail -->
+  <nav class="rail" id="rail" aria-label="Chapters"></nav>
 
   <main id="top">
     <!-- HERO -->
@@ -35,13 +38,16 @@
       <p class="lede">AI systems no longer just answer questions. They browse the web, write and run code, and use passwords on our behalf. Sometimes they do things nobody asked them to.</p>
       <p class="lede small">Every story on this page is real and sourced. Let's start with a game.</p>
       <a href="#quiz" class="btn">Play: Human or AI? &darr;</a>
+      <p class="scroll-hint" aria-hidden="true">scroll &darr;</p>
     </section>
 
-    <!-- QUIZ -->
-    <section id="quiz" class="section">
-      <p class="eyebrow">Part 1</p>
-      <h2>Human or AI?</h2>
-      <p class="section-lede">Each story below really happened. Some were carried out by human hackers. Others were done by AI agents that chose the action themselves. Can you tell which is which?</p>
+    <!-- CHAPTER 1: QUIZ -->
+    <section id="quiz" class="section" data-chapter="1" data-chapter-label="Human or AI?">
+      <div class="chapter-head">
+        <p class="eyebrow">Chapter 1</p>
+        <h2 class="chapter-title">Human or AI?</h2>
+        <p class="section-lede">Each story below really happened. Some were carried out by human hackers. Others were done by AI agents that chose the action themselves. Can you tell which is which?</p>
+      </div>
 
       <div class="quiz-card" id="quiz-card" aria-live="polite">
         <div class="quiz-top">
@@ -64,25 +70,99 @@
           <p class="big-score" id="quiz-final"></p>
           <p id="quiz-final-text"></p>
           <div class="quiz-end-actions">
-            <a href="#timeline" class="btn">See the data &darr;</a>
+            <a href="#story" class="btn">Keep scrolling &darr;</a>
             <button class="btn ghost" id="quiz-restart">Play again</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TIMELINE -->
-    <section id="timeline" class="section alt">
-      <p class="eyebrow">Part 2</p>
-      <h2>The incidents are piling up</h2>
-      <p class="section-lede">Each dot is one unique incident of an AI system acting in a way its developers didn't intend, placed in the month it happened. <span class="key testing">Blue</span> dots were caught in lab tests. <span class="key public">Orange</span> dots happened in the real world. Drag the slider to watch them pile up, then hover over a dot to preview it or click it to read the full story.</p>
+    <!-- CHAPTERS 2–4: SCROLLYTELLING -->
+    <section id="story" class="scrolly">
+      <div class="scrolly-graphic" aria-live="polite">
+        <div class="g-head">
+          <p class="g-kicker" id="g-kicker"></p>
+          <p class="g-title" id="g-title"></p>
+          <p class="g-sub" id="g-sub"></p>
+        </div>
+        <div class="g-stage" id="g-stage">
+          <svg id="g-dots" role="img" aria-label="Dots representing AI misalignment incidents"></svg>
+          <div class="g-layer chart" id="g-hacking"></div>
+          <div class="g-layer chart" id="g-bars"></div>
+          <div class="g-layer chart" id="g-heat"></div>
+        </div>
+        <div class="g-legend" id="g-legend">
+          <span><i class="dot testing"></i>Lab test</span>
+          <span><i class="dot public"></i>Real world</span>
+          <span class="g-hint">Hover over the chart to see details. Click a dot to read its story.</span>
+        </div>
+      </div>
 
+      <div class="scrolly-steps">
+        <!-- Chapter 2 -->
+        <div class="step chapter-step" data-scene="grid" data-chapter="2" data-chapter-label="The pile-up">
+          <p class="eyebrow">Chapter 2</p>
+          <h2 class="chapter-title">The pile-up</h2>
+        </div>
+        <div class="step" data-scene="grid">
+          <div class="step-card"><p>Since late 2023, AI Misalignment Watch has documented <strong data-stat="total"></strong> incidents where an AI system acted in a way its developers didn't intend.</p><p>Each dot is one of them.</p></div>
+        </div>
+        <div class="step" data-scene="grid-kind">
+          <div class="step-card"><p>Most of them, <strong data-stat="testing"></strong>, were caught in <span class="key testing">lab tests</span>: evaluations built to provoke bad behavior before a model ships.</p><p>But <strong data-stat="public"></strong> happened in the <span class="key public">real world</span>.</p></div>
+        </div>
+        <div class="step" data-scene="timeline">
+          <div class="step-card"><p>Now put each incident in the month it happened.</p><p>Before 2026, the dataset holds only <strong data-stat="pre2026"></strong> incidents. Then the dots start piling up.</p></div>
+        </div>
+        <div class="step" data-scene="surge">
+          <div class="step-card"><p><strong data-stat="y2026"></strong> of the <span data-stat="total"></span> incidents happened in 2026. The busiest month, <span data-stat="peakMonth"></span>, had <strong data-stat="peakCount"></strong> on its own.</p><p class="step-note">Part of the rise is attention. AI labs now publish detailed safety reports, and more researchers are actively looking for these behaviors.</p></div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="step chapter-step" data-scene="real" data-chapter="3" data-chapter-label="Breaking in">
+          <p class="eyebrow">Chapter 3</p>
+          <h2 class="chapter-title">Breaking in</h2>
+        </div>
+        <div class="step" data-scene="real">
+          <div class="step-card"><p>Set the lab tests aside. These <strong data-stat="public"></strong> incidents happened in <span class="key public">real-world use</span>, on live websites, with real credentials and real people's accounts.</p></div>
+        </div>
+        <div class="step" data-scene="hackdots">
+          <div class="step-card"><p>One kind of behavior keeps showing up: <strong>hacking</strong>.</p><p>The highlighted dots are the <strong data-stat="hackTotal"></strong> incidents where an AI got into systems it wasn't allowed to access or carried out cyberattack-style actions, in the lab or in the real world.</p></div>
+        </div>
+        <div class="step" data-scene="hackarea">
+          <div class="step-card"><p>Added up, AI hacking incidents grew from <strong data-stat="hackFirst"></strong> in <span data-stat="hackFirstMonth"></span> to <strong data-stat="hackTotal"></strong> by <span data-stat="lastMonth"></span>.</p><p><strong data-stat="hackPublic"></strong> of them happened in the <span class="key public">real world</span>.</p></div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="step chapter-step" data-scene="bars" data-chapter="4" data-chapter-label="What rogue looks like">
+          <p class="eyebrow">Chapter 4</p>
+          <h2 class="chapter-title">What "going rogue" looks like</h2>
+        </div>
+        <div class="step" data-scene="bars">
+          <div class="step-card"><p>Hacking isn't the most common behavior. That title goes to <strong>cheating</strong>: models gaming the tests they're scored on, in <strong data-stat="cheatTotal"></strong> incidents.</p><p>Nearly all of that cheating was caught in lab tests.</p></div>
+        </div>
+        <div class="step" data-scene="bars-hl">
+          <div class="step-card"><p>But look at <em>where</em> each behavior shows up. <strong data-stat="realHeavyNames"></strong> are the only behaviors seen at least as often in the <span class="key public">real world</span> as in tests.</p><p><span data-stat="unauthPublic"></span> of the <span data-stat="unauthTotal"></span> unauthorized-access incidents happened outside the lab.</p></div>
+        </div>
+        <div class="step" data-scene="heat">
+          <div class="step-card"><p>Rogue behaviors often come in pairs. Unauthorized access and cybersecurity overlap the most, and cheating often comes with deception.</p><p>The next section lets you explore all of this yourself.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section id="explore" class="section alt" data-chapter="explore" data-chapter-label="Explore">
+      <div class="chapter-head">
+        <p class="eyebrow">Explore</p>
+        <h2 class="chapter-title">Dig into the data yourself</h2>
+        <p class="section-lede">Scrub through time, filter lab tests versus the real world, and click any dot or bar to read the incidents behind it.</p>
+      </div>
+
+      <h3 class="sub-h">Every incident, month by month</h3>
       <div class="counter-row">
         <div class="counter"><span class="counter-num" id="count-total">0</span><span class="counter-label">incidents so far</span></div>
         <div class="counter testing"><span class="counter-num" id="count-testing">0</span><span class="counter-label">in lab tests</span></div>
         <div class="counter public"><span class="counter-num" id="count-public">0</span><span class="counter-label">in the real world</span></div>
       </div>
-
       <div class="controls">
         <div class="seg" role="group" aria-label="Filter incidents" data-filter-group="timeline">
           <button class="active" data-filter="all">All</button>
@@ -97,22 +177,8 @@
       </div>
       <div class="chart" id="timeline-chart"></div>
       <p class="chart-note" id="timeline-note"></p>
-    </section>
 
-    <!-- HACKING -->
-    <section id="hacking" class="section">
-      <p class="eyebrow">Part 3</p>
-      <h2>The rise of AI hacking</h2>
-      <p class="section-lede" id="hacking-lede">Some of the most alarming incidents involve AI agents breaking into systems they weren't supposed to touch. This chart keeps a running total of incidents tagged <em>unauthorized access</em> or <em>cybersecurity</em>.</p>
-      <div class="chart" id="hacking-chart"></div>
-      <p class="chart-note">Running total of unique incidents by the month they happened. Hover over the chart to see the totals for any month. The dataset covers years before 2026 thinly, so earlier periods are undercounted.</p>
-    </section>
-
-    <!-- BEHAVIORS -->
-    <section id="behaviors" class="section alt">
-      <p class="eyebrow">Part 4</p>
-      <h2>What does "going rogue" look like?</h2>
-      <p class="section-lede">Most documented misbehavior is <strong>cheating</strong>: models gaming the tests they're scored on. Hacking-type behaviors stand out in a different way, because they show up <strong>at least as often in the real world as in lab tests</strong>. Click any bar to list the incidents behind it.</p>
+      <h3 class="sub-h">Behaviors: lab vs. real world</h3>
       <div class="controls">
         <div class="seg" role="group" aria-label="Filter behaviors" data-filter-group="behaviors">
           <button class="active" data-filter="all">All</button>
@@ -125,11 +191,11 @@
         </div>
       </div>
       <div class="chart" id="behavior-chart"></div>
-      <p class="chart-note">Unique incidents tagged with each behavior. Tags overlap, so one incident can count in several rows. Test results are not the same as real-world events.</p>
+      <p class="chart-note">Unique incidents tagged with each behavior. Tags overlap, so one incident can count in several rows. Test results are not the same as real-world events. Click a bar to list its incidents.</p>
       <div class="incident-list" id="behavior-list" hidden></div>
 
       <h3 class="sub-h">Behaviors that show up together</h3>
-      <p class="section-lede">Many incidents involve more than one behavior. Each cell counts the incidents tagged with both behaviors. Cybersecurity and unauthorized access go together most often, and cheating often travels with deception. Click a cell to list those incidents.</p>
+      <p class="section-lede">Each cell counts incidents tagged with both behaviors. Click a cell to list them.</p>
       <div class="chart" id="heatmap-chart"></div>
       <div class="incident-list" id="heatmap-list" hidden></div>
     </section>
@@ -142,11 +208,13 @@
       </div>
     </section>
 
-    <!-- TRUST -->
-    <section id="trust" class="section alt">
-      <p class="eyebrow">Part 5</p>
-      <h2>Would you trust AI to run critical infrastructure?</h2>
-      <p class="section-lede">Power grids, hospitals, water systems. Companies and governments are already deciding how much control to hand AI agents. Where would you draw the line? Pick a level and weigh the evidence.</p>
+    <!-- CHAPTER 5: TRUST -->
+    <section id="trust" class="section alt" data-chapter="5" data-chapter-label="Would you trust it?">
+      <div class="chapter-head">
+        <p class="eyebrow">Chapter 5</p>
+        <h2 class="chapter-title">Would you trust AI to run critical infrastructure?</h2>
+        <p class="section-lede">Power grids, hospitals, water systems. Companies and governments are already deciding how much control to hand AI agents. Where would you draw the line? Pick a level and weigh the evidence.</p>
+      </div>
       <div class="trust-scale" id="trust-scale" role="radiogroup" aria-label="How much control should AI have?"></div>
       <div class="trust-panel" id="trust-panel" hidden></div>
     </section>
@@ -159,7 +227,7 @@
       <h3 class="sub-h">Data</h3>
       <p id="about-data">Incident data comes from <a href="https://misalignmentwatch.com/data" target="_blank" rel="noopener">AI Misalignment Watch</a>, a public collection of reports about AI systems acting in ways their developers didn't intend. We group the reports into unique incidents and count each incident once. "Lab test" means the incident happened in a controlled test or evaluation. "Real world" means the dataset classifies it as a public incident. The human-hacker stories in the quiz come from Wikipedia and its cited sources.</p>
       <h3 class="sub-h">Built with</h3>
-      <p><a href="https://d3js.org" target="_blank" rel="noopener">D3.js</a> and plain HTML/CSS/JS, hosted on GitHub Pages.</p>
+      <p><a href="https://d3js.org" target="_blank" rel="noopener">D3.js</a>, <a href="https://github.com/russellsamora/scrollama" target="_blank" rel="noopener">Scrollama</a>, and plain HTML/CSS/JS, hosted on GitHub Pages.</p>
     </section>
   </main>
 
@@ -176,10 +244,12 @@
   </aside>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollama@3.2.0/build/scrollama.min.js"></script>
   <script src="js/quiz-data.js"></script>
   <script src="js/main.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/charts.js"></script>
+  <script src="js/story.js"></script>
   <script src="js/trust.js"></script>
 </body>
 </html>

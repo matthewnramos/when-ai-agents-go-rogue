@@ -145,6 +145,46 @@ App.renderIncidentList = (container, heading, incidents) => {
   container.querySelectorAll("li button").forEach((b) => b.addEventListener("click", () => App.openIncident(b.dataset.id)));
 };
 
+/* ---------- Debounced width-change resize hook ---------- */
+const resizeHandlers = [];
+App.onResize = (fn) => resizeHandlers.push(fn);
+let lastW = window.innerWidth, resizeTimer;
+window.addEventListener("resize", () => {
+  if (window.innerWidth === lastW) return; // ignore mobile URL-bar height changes
+  lastW = window.innerWidth;
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => resizeHandlers.forEach((fn) => fn()), 150);
+});
+
+/* ---------- Scroll progress bar + chapter rail ---------- */
+(function progressAndRail() {
+  const bar = document.getElementById("progress-bar");
+  const rail = document.getElementById("rail");
+  const chapters = [...document.querySelectorAll("[data-chapter]")];
+  rail.innerHTML = chapters
+    .map((c, i) => {
+      const n = c.dataset.chapter;
+      const label = c.dataset.chapterLabel;
+      return `<button data-i="${i}" aria-label="${label}"><span class="rail-num">${n === "explore" ? "&#9679;" : n}</span><span class="rail-label">${label}</span></button>`;
+    })
+    .join("");
+  const buttons = [...rail.querySelectorAll("button")];
+  buttons.forEach((b) => b.addEventListener("click", () => chapters[+b.dataset.i].scrollIntoView({ behavior: App.reducedMotion ? "auto" : "smooth" })));
+
+  let ticking = false;
+  function onScroll() {
+    ticking = false;
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+    let active = -1;
+    chapters.forEach((c, i) => { if (c.getBoundingClientRect().top < innerHeight * 0.5) active = i; });
+    buttons.forEach((b, i) => b.classList.toggle("active", i === active));
+    rail.classList.toggle("visible", active >= 0 && document.getElementById("about").getBoundingClientRect().top > innerHeight * 0.5);
+  }
+  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+})();
+
 /* ---------- Segmented-control helper ---------- */
 App.segmented = (el, attr, onChange) => {
   el.querySelectorAll("button").forEach((btn) =>
