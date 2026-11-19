@@ -201,6 +201,57 @@
       <div class="incident-list" id="heatmap-list" hidden></div>
     </section>
 
+    <!-- WHO TOLD US: the same dots, sorted by who reported each incident first -->
+    <section id="sources" class="section">
+      <div class="chapter-head">
+        <p class="eyebrow">Before you panic</p>
+        <h2 class="chapter-title">Who told us?</h2>
+        <p class="section-lede">An incident only becomes a dot when someone writes it up. So before reading too much into the 2026 pile-up, look at where the dots came from.</p>
+      </div>
+
+      <div class="guess" id="src-guess">
+        <p class="guess-q"><span class="guess-tag">Guess first</span>The dataset has <strong data-src="public"></strong> real-world incidents. For how many of them was the first report written by the same company that built the AI?</p>
+        <div class="guess-row">
+          <div class="guess-slider">
+            <input type="range" id="src-guess-range" min="0" max="1" step="1" value="0" aria-label="Your guess">
+            <span class="guess-mark" id="src-guess-mark" hidden></span>
+          </div>
+          <output id="src-guess-out" for="src-guess-range"></output>
+          <button class="btn" id="src-guess-btn" type="button">Show me</button>
+        </div>
+        <p class="guess-result" id="src-guess-result" aria-live="polite" hidden></p>
+      </div>
+
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Arrange the incidents" id="src-view">
+          <button class="active" data-view="when">When it happened</button>
+          <button data-view="who">Who reported it first</button>
+        </div>
+        <div class="seg" role="group" aria-label="Filter incidents" id="src-filter">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="testing">Lab tests</button>
+          <button data-filter="public">Real world</button>
+        </div>
+      </div>
+      <div class="src-head" aria-live="polite">
+        <p class="g-kicker" id="src-kicker"></p>
+        <p class="g-title" id="src-title"></p>
+        <p class="g-sub" id="src-sub"></p>
+      </div>
+      <div class="chart" id="sources-chart"></div>
+      <div class="g-legend src-legend">
+        <span><i class="dot testing"></i>Lab test</span>
+        <span><i class="dot public"></i>Real world</span>
+        <span><i class="src-swatch"></i>Published together in one report</span>
+        <span class="g-hint">Hover a dot to see who reported it. Click to read the story.</span>
+      </div>
+      <p class="chart-note">"Reported first" means the earliest report on each incident in AI Misalignment Watch. The reporter categories are the dataset's own.</p>
+      <details class="src-table">
+        <summary>See the numbers as a table</summary>
+        <div id="src-table"></div>
+      </details>
+    </section>
+
     <!-- CAVEAT -->
     <section class="section caveat-wrap">
       <div class="caveat">
@@ -265,6 +316,7 @@
   <script src="js/quiz.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/story.js"></script>
+  <script src="js/sources.js"></script>
   <script src="js/trust.js"></script>
 </body>
 </html>
