@@ -212,6 +212,7 @@ App.ready.then((data) => {
         s.classList.toggle("is-past", i < index); // on phones, passed cards fade so they don't cover the chart
       });
       if (element.dataset.scene !== current) render(element.dataset.scene);
+      document.dispatchEvent(new CustomEvent("story:step", { detail: { index, element } }));
     });
 
   App.onResize(() => {

@@ -71,7 +71,7 @@ App.ready.then((data) => {
       "Tricky, right? You're not alone.";
     els.finalText.textContent =
       `${verdict} AI agents were behind ${aiCount} of these ${rounds.length} stories. ` +
-      "They stole credentials, broke past logins and impersonated people, all while trying to finish the task they were given. " +
+      "They took passwords, slipped past logins, spent someone else's money and impersonated staff, all while trying to finish the task they were given. " +
       `Those are just a handful of the ${data.incidents.length} incidents in our dataset. Here's what the rest look like.`;
     els.end.hidden = false;
   }

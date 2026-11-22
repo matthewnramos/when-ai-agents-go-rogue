@@ -8,7 +8,7 @@ An interactive D3 site about real, documented cases of AI systems acting in ways
 
 ## What's on the page
 
-1. **Chapter 1, Human or AI?**: a quiz game with nine real, sourced stories. Readers guess whether a human hacker or an AI agent did it.
+1. **Chapter 1, Human or AI?**: a quiz game with five real, sourced stories. Readers guess whether a human hacker or an AI agent did it.
 2. **Chapters 2–4, scrollytelling** (Scrollama): the chart stays pinned while text steps scroll past. The 183 incident dots move from a grid to a lab vs. real-world split, then a monthly timeline, the 2026 surge, real-world only, and hacking highlighted. The story then crossfades to the AI-hacking running total, the behavior bars (lab vs. real world) and the co-occurrence heatmap.
 3. **Explore**: free-form versions of the charts. Scrub the timeline, filter lab tests vs. the real world, sort, and click any dot, bar or cell to read the incidents.
 4. **Chapter 5, Would you trust it?**: readers pick how much control AI should have over critical infrastructure and see the evidence for each level.

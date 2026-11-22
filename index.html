@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>When AI Agents Go Rogue</title>
   <meta name="description" content="An interactive look at real, documented cases of AI agents acting in ways their developers didn't intend. DSC 106 final project.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d12'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23ff4d6d'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306070a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23ff2d3d'%3E%3E_%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -34,8 +34,7 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <p class="terminal-line" id="typed" aria-hidden="true"></p>
-      <h1>When AI Agents <span class="glitch" data-text="Go Rogue">Go Rogue</span></h1>
+      <h1>When AI Agents Go <span class="glitch" data-text="Rogue">Rogue</span></h1>
       <p class="lede">AI systems no longer just answer questions. They browse the web, write and run code, and use passwords on our behalf. Sometimes they do things nobody asked them to.</p>
       <p class="lede small">Every story on this page is real and sourced. Let's start with a game.</p>
       <a href="#quiz" class="btn">Play: Human or AI? &darr;</a>
@@ -47,7 +46,6 @@
       <div class="chapter-head">
         <p class="eyebrow">Chapter 1</p>
         <h2 class="chapter-title">Human or AI?</h2>
-        <p class="section-lede">Each story below really happened. Some were carried out by human hackers. Others were done by AI agents that chose the action themselves. Can you tell which is which?</p>
       </div>
 
       <div class="quiz-card" id="quiz-card" aria-live="polite">
@@ -57,8 +55,8 @@
         </div>
         <p class="quiz-story" id="quiz-story"></p>
         <div class="quiz-choices" id="quiz-choices">
-          <button class="choice" data-answer="human"><span class="choice-icon">&#128100;</span> A human hacker</button>
-          <button class="choice" data-answer="ai"><span class="choice-icon">&#129302;</span> An AI agent</button>
+          <button class="choice" data-answer="human">A human hacker</button>
+          <button class="choice" data-answer="ai">An AI agent</button>
         </div>
         <div class="quiz-reveal" id="quiz-reveal" hidden>
           <p class="verdict" id="quiz-verdict"></p>
@@ -127,7 +125,7 @@
           <div class="step-card"><p>Set the lab tests aside. These <strong data-stat="public"></strong> incidents happened in <span class="key public">real-world use</span>, on live websites, with real credentials and real people's accounts.</p></div>
         </div>
         <div class="step" data-scene="hackdots">
-          <div class="step-card"><p>One kind of behavior keeps showing up: <strong>hacking</strong>.</p><p>The highlighted dots are the <strong data-stat="hackTotal"></strong> incidents where an AI got into systems it wasn't allowed to access or carried out cyberattack-style actions, in the lab or in the real world.</p></div>
+          <div class="step-card"><p>One kind of behavior keeps showing up: <strong>hacking</strong>.</p><p>The highlighted dots are the <strong data-stat="hackTotal"></strong> incidents tagged <span class="term" data-term="Unauthorized access">unauthorized access</span> or <span class="term" data-term="Cybersecurity">cybersecurity</span>, in the lab or in the real world.</p></div>
         </div>
         <div class="step" data-scene="hackarea">
           <div class="step-card"><p>Added up, AI hacking incidents grew from <strong data-stat="hackFirst"></strong> in <span data-stat="hackFirstMonth"></span> to <strong data-stat="hackTotal"></strong> by <span data-stat="lastMonth"></span>.</p><p><strong data-stat="hackPublic"></strong> of them happened in the <span class="key public">real world</span>.</p></div>
@@ -137,6 +135,9 @@
         <div class="step chapter-step" data-scene="bars" data-chapter="4" data-chapter-label="What rogue looks like">
           <p class="eyebrow">Chapter 4</p>
           <h2 class="chapter-title">What "going rogue" looks like</h2>
+        </div>
+        <div class="step" data-scene="bars">
+          <div class="step-card"><p>The dataset tags every incident with one or more of six behaviors: <span class="term" data-term="Cheating / reward hacking">cheating</span>, <span class="term" data-term="Deception / scheming">deception</span>, <span class="term" data-term="Unauthorized access">unauthorized access</span>, <span class="term" data-term="Cybersecurity">cybersecurity</span>, <span class="term" data-term="Sabotage">sabotage</span> and <span class="term" data-term="Self-preservation">self-preservation</span>.</p><p class="step-note">Hover over or tap a behavior to see what it means.</p></div>
         </div>
         <div class="step" data-scene="bars">
           <div class="step-card"><p>Hacking isn't the most common behavior. That title goes to <strong>cheating</strong>: models gaming the tests they're scored on, in <strong data-stat="cheatTotal"></strong> incidents.</p><p>Nearly all of that cheating was caught in lab tests.</p></div>
@@ -171,7 +172,7 @@
           <button data-filter="public">Real world</button>
         </div>
         <div class="scrubber">
-          <button class="play" id="play" aria-label="Play timeline">&#9654;</button>
+          <button class="play" id="play" aria-label="Play timeline">&#9654;&#xFE0E;</button>
           <input type="range" id="month-slider" min="0" max="0" value="0" aria-label="Show incidents through month">
           <span class="slider-label" id="slider-label"></span>
         </div>
@@ -227,7 +228,7 @@
 
       <h3 class="sub-h">What have you done so far?</h3>
       <p>So far, we've settled on the AI Misalignment Watch dataset and got a working prototype of the whole page live on GitHub Pages from our public repo. First, we had to clean up duplicates in the raw data: the dataset comes as 447 reports and a table of 183 incidents, and the same incident can show up in more than one report, so we wrote a Python script that merges the two into a single record per incident.</p>
-      <p>From there, we built out the full structure of the page. Readers start with a nine-story quiz where they guess whether a human hacker or an AI agent was behind each real case, then move through three scrollytelling chapters, an interactive explore section, and a closing question on trust. In the scrollytelling chapters, we keep the chart pinned while those 183 dots rearrange from a grid into a lab-test vs. real-world split and then a monthly timeline, before moving into AI hacking, the different behavior types, and how often they show up together. The explore section is working too: you can filter lab tests vs. real-world incidents, scrub or play through the months, re-sort the behavior bars, and click any dot, bar, or heatmap cell to read the actual incidents behind it. Every number in the text is also calculated directly from the data file when the page loads, so we can refresh the dataset later without updating stats by hand.</p>
+      <p>From there, we built out the full structure of the page. Readers start with a five-story quiz where they guess whether a human hacker or an AI agent was behind each real case, then move through three scrollytelling chapters, an interactive explore section, and a closing question on trust. In the scrollytelling chapters, we keep the chart pinned while those 183 dots rearrange from a grid into a lab-test vs. real-world split and then a monthly timeline, before moving into AI hacking, the different behavior types, and how often they show up together. The explore section is working too: you can filter lab tests vs. real-world incidents, scrub or play through the months, re-sort the behavior bars, and click any dot, bar, or heatmap cell to read the actual incidents behind it. Every number in the text is also calculated directly from the data file when the page loads, so we can refresh the dataset later without updating stats by hand.</p>
 
       <h3 class="sub-h">What will be the most challenging part of your project to design, and why?</h3>
       <p>The trickiest part to get right will be showing the huge 2026 spike without misleading the reader. Right now, 167 out of our 183 incidents come from 2026. On a plain timeline, it looks like AI suddenly started going rogue this year, when a lot of that jump is really about reporting: labs and outside evaluators put out a lot more safety reports in 2026, while the dataset's coverage of earlier years is pretty thin. At the moment we just have a note under the charts explaining this, and we don't think that's enough. Most people will remember the dramatic spike and skip the caption, so we want the chart itself to show what's going on, for example by revealing who first reported each incident and how many of the dots come from just a handful of big reports.</p>
@@ -266,5 +267,6 @@
   <script src="js/charts.js"></script>
   <script src="js/story.js"></script>
   <script src="js/trust.js"></script>
+  <script src="js/bot.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-// Shared app setup: data loading, nav, hero typing, tooltip, incident drawer.
+// Shared app setup: data loading, nav, tooltip, incident drawer.
 const App = (window.App = {});
 
 App.KIND_LABEL = { testing: "Lab test", public: "Real world" };
@@ -23,31 +23,6 @@ links.querySelectorAll("a").forEach((a) =>
     toggle.setAttribute("aria-expanded", "false");
   })
 );
-
-/* ---------- Hero typing effect ---------- */
-(function typing() {
-  const lines = [
-    '> agent.run(goal="make all tests pass")',
-    "> deleting tests/... done",
-    "> all tests pass ✓",
-  ];
-  const el = document.getElementById("typed");
-  if (App.reducedMotion) {
-    el.textContent = lines[lines.length - 1];
-    return;
-  }
-  let line = 0, char = 0;
-  (function type() {
-    const current = lines[line];
-    el.textContent = current.slice(0, ++char);
-    if (char < current.length) return setTimeout(type, 45);
-    setTimeout(() => {
-      line = (line + 1) % lines.length;
-      char = 0;
-      type();
-    }, 1600);
-  })();
-})();
 
 /* ---------- Helpers ---------- */
 App.esc = (s) =>
@@ -75,6 +50,38 @@ App.tooltip = {
   },
   hide() { tip.hidden = true; },
 };
+
+/* ---------- Glossary terms ---------- */
+// <span class="term" data-term="..."> shows a definition on hover, focus or tap.
+App.GLOSSARY = {
+  "Cheating / reward hacking": "gaming how it's scored instead of doing the real task",
+  "Deception / scheming": "misleading people about what it's doing or why",
+  "Unauthorized access": "getting into systems, files or accounts it wasn't allowed to use",
+  "Cybersecurity": "carrying out cyberattack-style actions against systems",
+  "Sabotage": "deliberately damaging or undermining work, data or systems",
+  "Self-preservation": "trying to avoid being shut down, replaced or changed",
+};
+
+document.querySelectorAll(".term[data-term]").forEach((el, i) => {
+  const name = el.dataset.term;
+  const def = App.GLOSSARY[name];
+  if (!def) return;
+  const html = `<strong>${App.esc(name.toLowerCase())}</strong><div>${App.esc(def)}</div>`;
+  const desc = Object.assign(document.createElement("span"), { id: `term-def-${i}`, className: "sr-only", textContent: def });
+  el.after(desc);
+  el.tabIndex = 0;
+  el.setAttribute("aria-describedby", desc.id);
+  const showAtEl = () => {
+    const r = el.getBoundingClientRect();
+    App.tooltip.show(html, { clientX: r.left, clientY: r.bottom });
+  };
+  el.addEventListener("pointerenter", (ev) => { if (ev.pointerType === "mouse") App.tooltip.show(html, ev); });
+  el.addEventListener("pointermove", (ev) => { if (ev.pointerType === "mouse") App.tooltip.move(ev); });
+  el.addEventListener("pointerleave", (ev) => { if (ev.pointerType === "mouse") App.tooltip.hide(); });
+  el.addEventListener("focus", showAtEl);
+  el.addEventListener("blur", () => App.tooltip.hide());
+  el.addEventListener("keydown", (ev) => { if (ev.key === "Escape") App.tooltip.hide(); });
+});
 
 /* ---------- Incident drawer ---------- */
 const drawer = document.getElementById("drawer");

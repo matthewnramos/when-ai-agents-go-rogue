@@ -11,7 +11,9 @@ App.ready.then((data) => {
     muted: css.getPropertyValue("--muted").trim(),
     grid: css.getPropertyValue("--border").trim(),
     surface: css.getPropertyValue("--surface").trim(),
-    neutral: "#5b6378",
+    bg: css.getPropertyValue("--bg").trim(),
+    neutral: css.getPropertyValue("--neutral").trim(),
+    heat: css.getPropertyValue("--heat").trim(),
   };
   const KINDS = ["public", "testing"]; // stacking order: real world on the bottom
   const HACK_TAGS = ["Unauthorized access", "Cybersecurity"];
@@ -212,7 +214,7 @@ App.ready.then((data) => {
             .attr("y", (d) => y(d.row.name) + yOff).attr("height", bh);
           g.select("text").transition(t)
             .attr("x", (d) => x(d.x0 + d.v / 2)).attr("y", (d) => y(d.row.name) + yOff + bh / 2)
-            .style("fill", "#0b0d12")
+            .style("fill", C.bg)
             .text((d) => (x(d.x0 + d.v) - x(d.x0) > 26 ? d.v : ""));
         });
 
@@ -262,7 +264,7 @@ App.ready.then((data) => {
       cells.push({ a, b, i, j, diag: i === j, n: list.length, list });
     }));
     const maxOff = d3.max(cells.filter((c) => !c.diag), (c) => c.n);
-    const color = d3.scaleSequential(d3.interpolateRgb(C.surface, C.testing)).domain([0, maxOff]);
+    const color = d3.scaleSequential(d3.interpolateRgb(C.surface, C.heat)).domain([0, maxOff]);
     const listEl = opts.listEl;
     const container = d3.select(el);
 
@@ -296,7 +298,7 @@ App.ready.then((data) => {
         .attr("stroke", (c) => (c.diag ? C.grid : "none")).attr("stroke-dasharray", (c) => (c.diag ? "3,3" : null));
       g.append("text").attr("x", (size - 2) / 2).attr("y", (size - 2) / 2 + 4).attr("text-anchor", "middle")
         .attr("class", "hm-val")
-        .style("fill", (c) => (c.diag ? C.muted : c.n > maxOff * 0.55 ? "#0b0d12" : C.text))
+        .style("fill", (c) => (c.diag ? C.muted : c.n > maxOff * 0.55 ? C.bg : C.text))
         .text((c) => (c.diag ? "—" : c.n));
 
       g.filter((c) => !c.diag)
@@ -428,7 +430,7 @@ App.ready.then((data) => {
       if (!timer) return;
       clearInterval(timer);
       timer = null;
-      playBtn.innerHTML = "&#9654;";
+      playBtn.innerHTML = "&#9654;&#xFE0E;";
       playBtn.setAttribute("aria-label", "Play timeline");
     }
     playBtn.addEventListener("click", () => {
