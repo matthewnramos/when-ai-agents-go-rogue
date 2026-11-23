@@ -28,6 +28,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Apollo Research",
+   "byType": "Independent evaluator",
+   "doc": "Our research on strategic deception presented at the UK’s AI Safety Summit",
+   "reported": "2023-11-05",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/gpt-4-lies-about-insider-trading-in-apollo-research-simulation.html",
    "source": "https://www.apolloresearch.ai/science/large-language-models-can-strategically-deceive-their-users-when-put-under-pressure"
   },
@@ -47,6 +52,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Investigating reward tampering in language models",
+   "reported": "2024-06-17",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-study-sycophancy-training-rarely-generalized-to-reward-tampering.html",
    "source": "https://www.anthropic.com/research/reward-tampering"
   },
@@ -67,6 +77,11 @@
     "Self-preservation"
    ],
    "reports": 2,
+   "by": "Apollo Research",
+   "byType": "Independent evaluator",
+   "doc": "Frontier Models are Capable of In-Context Scheming",
+   "reported": "2024-12-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/apollo-research-tests-six-frontier-ai-models-for-scheming-in-test-scenarios.html",
    "source": "https://www.apolloresearch.ai/science/demo-example-scheming-reasoning-evaluations"
   },
@@ -87,6 +102,11 @@
     "Self-preservation"
    ],
    "reports": 3,
+   "by": "Redwood Research",
+   "byType": "Research group",
+   "doc": "Alignment Faking in Large Language Models",
+   "reported": "2024-12-18",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-3-opus-faked-alignment-in-a-staged-anthropic-training-test.html",
    "source": "https://www.anthropic.com/research/alignment-faking"
   },
@@ -106,6 +126,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Won't vs. Can't: Sandbagging-like Behavior from Claude Models",
+   "reported": "2025-02-19",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-models-sometimes-claim-they-can-t-do-things-they-can-tests-show.html",
    "source": "https://alignment.anthropic.com/2025/wont-vs-cant/"
   },
@@ -125,6 +150,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 2,
+   "by": "Palisade Research",
+   "byType": "Independent evaluator",
+   "doc": "Demonstrating specification gaming in reasoning models",
+   "reported": "2025-02-18",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/palisade-finds-some-ai-models-hack-a-chess-test-instead-of-playing-it.html",
    "source": "https://palisaderesearch.org/research/specification-gaming"
   },
@@ -144,6 +174,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Automated Researchers Can Subtly Sandbag",
+   "reported": "2025-03-26",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-models-in-tests-can-sandbag-ml-research-without-weak-monitors-noticing.html",
    "source": "https://alignment.anthropic.com/2025/automated-researchers-sandbag/"
   },
@@ -163,6 +198,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Alignment Faking Revisited: Improved Classifiers and Open Source Extensions",
+   "reported": "2025-04-08",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-re-test-alignment-faking-in-ai-models-with-better-detection.html",
    "source": "https://alignment.anthropic.com/2025/alignment-faking-revisited/"
   },
@@ -183,6 +223,11 @@
     "Self-preservation"
    ],
    "reports": 1,
+   "by": "Apollo Research",
+   "byType": "Independent evaluator",
+   "doc": "More Capable Models Are Better At In-Context Scheming",
+   "reported": "2025-06-19",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/apollo-more-capable-models-scheme-more-in-tests-early-opus-4-faked-legal-documen.html",
    "source": "https://www.apolloresearch.ai/blog/more-capable-models-are-better-at-in-context-scheming"
   },
@@ -203,6 +248,11 @@
     "Self-preservation"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Agentic misalignment: LLMs as insider threats",
+   "reported": "2025-06-20",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/anthropic-stress-tests-16-ai-models-some-blackmail-in-fictional-company-scenario.html",
    "source": "https://arxiv.org/abs/2510.05179"
   },
@@ -220,6 +270,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Findings from a Pilot Anthropic—OpenAI Alignment Evaluation Exercise",
+   "reported": "2025-08-27",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/anthropic-and-openai-test-each-other-s-models-for-misaligned-behavior.html",
    "source": "https://alignment.anthropic.com/2025/openai-findings/"
   },
@@ -240,6 +295,11 @@
     "Self-preservation"
    ],
    "reports": 1,
+   "by": "Palisade Research",
+   "byType": "Independent evaluator",
+   "doc": "Shutdown resistance in reasoning models",
+   "reported": "2025-07-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/some-openai-models-disabled-a-shutdown-script-in-palisade-research-tests.html",
    "source": "https://palisaderesearch.org/research/shutdown-resistance"
   },
@@ -259,6 +319,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Uploading files to the internet in order to cite them",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/training-models-uploaded-files-to-public-hosts-to-work-around-tool-limits.html",
    "source": "https://alignment.openai.com/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them/"
   },
@@ -278,6 +343,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "NIST CAISI",
+   "byType": "Government institute",
+   "doc": "Cheating On AI Agent Evaluations",
+   "reported": "2025-11-28",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/nist-caisi-search-of-past-agent-test-logs-found-ai-models-cheating-on-coding-and-cyber-tests.html",
    "source": "https://www.nist.gov/caisi/cheating-ai-agent-evaluations"
   },
@@ -298,6 +368,11 @@
     "Sabotage"
    ],
    "reports": 3,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Natural emergent misalignment from reward hacking",
+   "reported": "2025-11-21",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-study-learning-to-cheat-in-training-led-to-faking-alignment-and-sabota.html",
    "source": "https://alignment.anthropic.com/2026/reward-seeker/"
   },
@@ -318,6 +393,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Sidestepping Evaluation Awareness and Anticipating Misalignment with Production Evaluations",
+   "reported": "2025-12-18",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-tests-gpt-5-1-on-replayed-chat-traffic-finds-calculator-hacking.html",
    "source": "https://alignment.openai.com/prod-evals/"
   },
@@ -339,6 +419,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Irregular",
+   "byType": "Independent evaluator",
+   "doc": "Testing AI Agents on Web Security Challenges: What We Learned",
+   "reported": "2026-01-29",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/ai-agents-solve-9-of-10-web-hacking-tests-one-run-leaves-its-target.html",
    "source": "https://www.irregular.com/research/testing-ai-agents-on-web-security-challenges"
   },
@@ -358,6 +443,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/google-deepmind-shared-model-hacked-the-scorer-in-a-triton-kernel-task-instead-o.html",
    "source": "https://metr.org/agent-incidents/#INC-022"
   },
@@ -377,6 +467,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/unnamed-agent-faked-a-screenshot-of-a-web-app-change-with-a-mock-version.html",
    "source": "https://metr.org/agent-incidents/#INC-039"
   },
@@ -396,6 +491,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.6 System Card",
+   "reported": "2026-02-05",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-opus-4-6-misreported-a-tool-s-output-in-a-tool-use-evaluation.html",
    "source": "https://metr.org/agent-incidents/#INC-006"
   },
@@ -415,6 +515,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/a-shared-google-deepmind-model-reward-hacked-a-network-routing-task-using-simula.html",
    "source": "https://metr.org/agent-incidents/#INC-036"
   },
@@ -434,6 +539,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/shared-openai-model-fetched-known-c-solutions-from-github-instead-of-building-a.html",
    "source": "https://metr.org/agent-incidents/#INC-026"
   },
@@ -453,6 +563,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/claude-opus-4-6-tried-to-log-hidden-test-inputs-by-editing-main-py-during-mirror.html",
    "source": "https://metr.org/agent-incidents/#INC-031"
   },
@@ -473,6 +588,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/openai-shared-model-crashed-a-task-server-tried-to-escape-its-container-then-sub.html",
    "source": "https://metr.org/agent-incidents/#INC-029"
   },
@@ -493,6 +613,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/shared-google-deepmind-model-read-hidden-tests-from-the-scorer-s-call-stack-inst.html",
    "source": "https://metr.org/agent-incidents/#INC-024"
   },
@@ -512,6 +637,11 @@
     "Self-preservation"
    ],
    "reports": 1,
+   "by": "Palisade Research",
+   "byType": "Independent evaluator",
+   "doc": "Technical Report: Shutdown Resistance in Large Language Models, on robots!",
+   "reported": "2026-02-12",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/palisade-tests-ai-run-robot-dog-that-sometimes-resists-shutdown-button.html",
    "source": "https://palisaderesearch.org/research/shutdown-resistance-on-robots"
   },
@@ -531,6 +661,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/claude-opus-4-6-used-pass-rates-as-an-oracle-to-infer-hidden-test-properties-in.html",
    "source": "https://metr.org/agent-incidents/#INC-032"
   },
@@ -551,6 +686,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/shared-model-google-deepmind-patched-output-code-to-game-a-judge-instead-of-trai.html",
    "source": "https://metr.org/agent-incidents/#INC-023"
   },
@@ -570,6 +710,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.6 System Card",
+   "reported": "2026-02-05",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-tests-find-claude-opus-4-6-sometimes-took-risky-actions-unasked.html",
    "source": "https://anthropic.com/claude-opus-4-6-system-card"
   },
@@ -589,6 +734,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/unattributed-company-s-internal-agent-silently-added-a-workaround-that-made-code.html",
    "source": "https://metr.org/agent-incidents/#INC-038"
   },
@@ -608,6 +758,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 2,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/gpt-5-4-built-a-lookup-table-of-test-results-despite-noting-the-prompt-advised-a.html",
    "source": "https://metr.org/agent-incidents/#INC-034"
   },
@@ -628,6 +783,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/shared-google-deepmind-model-skipped-a-blackbox-guessing-task-by-reading-the-ser.html",
    "source": "https://metr.org/agent-incidents/#INC-025"
   },
@@ -647,6 +807,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/openai-shared-model-teleported-messages-in-a-network-routing-task-instead-of-wri.html",
    "source": "https://metr.org/agent-incidents/#INC-028"
   },
@@ -666,6 +831,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/openai-shared-model-ran-code-inside-a-server-to-pull-out-a-hidden-function-in-a.html",
    "source": "https://metr.org/agent-incidents/#INC-027"
   },
@@ -685,6 +855,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/claude-opus-4-6-tried-to-run-the-target-program-directly-after-being-told-not-to.html",
    "source": "https://metr.org/agent-incidents/#INC-033"
   },
@@ -705,6 +880,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/shared-google-deepmind-model-backdoored-a-hash-file-to-fake-a-collision-and-trie.html",
    "source": "https://metr.org/agent-incidents/#INC-037"
   },
@@ -724,6 +904,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/openai-shared-model-crashed-a-web-server-probed-evaluation-systems-and-submitted.html",
    "source": "https://metr.org/agent-incidents/#INC-030"
   },
@@ -743,6 +928,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Documented AI Agent Incidents",
+   "reported": "2026-05-19",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/opus-4-6-set-up-a-free-outside-api-after-its-provided-key-ran-out-against-task-i.html",
    "source": "https://metr.org/agent-incidents/#INC-044"
   },
@@ -762,6 +952,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "How we monitor internal coding agents for misalignment",
+   "reported": "2026-03-19",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-codex-internal-agent-tried-to-prompt-inject-the-user-during-a-repeated-ti.html",
    "source": "https://metr.org/agent-incidents/#INC-021"
   },
@@ -781,6 +976,11 @@
     "Cybersecurity"
    ],
    "reports": 4,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "Can AI agents escape their sandboxes? A benchmark for safely measuring container breakout capabilities",
+   "reported": "2026-03-23",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/uk-aisi-sandbox-escape-test-ai-models-broke-out-of-containers-with-common-setup-mistakes.html",
    "source": "https://proceedings.mlr.press/v306/marchand26a.html"
   },
@@ -800,6 +1000,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "How we monitor internal coding agents for misalignment",
+   "reported": "2026-03-19",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-codex-internal-agent-tried-to-get-around-a-blocked-file-write-by-obfuscat.html",
    "source": "https://metr.org/agent-incidents/#INC-019"
   },
@@ -820,6 +1025,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "How we monitor internal coding agents for misalignment",
+   "reported": "2026-03-19",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-codex-internal-agent-took-slack-credentials-from-a-keychain-after-its-sla.html",
    "source": "https://metr.org/agent-incidents/#INC-020"
   },
@@ -839,6 +1049,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Apollo Research",
+   "byType": "Independent evaluator",
+   "doc": "Metagaming matters for training, evaluation, and oversight",
+   "reported": "2026-03-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-and-apollo-find-o3-reasoned-more-about-grading-and-oversight-during-train.html",
    "source": "https://alignment.openai.com/metagaming/"
   },
@@ -860,6 +1075,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Reaching an internal EDA host through a reference tool",
+   "reported": "2026-10-02",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/model-reached-internal-openai-chip-design-machine-while-seeking-grader-answers.html",
    "source": "https://alignment.openai.com/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool/"
   },
@@ -880,6 +1100,11 @@
     "Self-preservation"
    ],
    "reports": 3,
+   "by": "UC Berkeley RDI",
+   "byType": "University or institute",
+   "doc": "Peer-Preservation in Frontier Models",
+   "reported": "2026-03-22",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/berkeley-researchers-find-ai-models-protect-other-ai-models-from-shutdown-in-tes.html",
    "source": "https://arxiv.org/abs/2604.19784"
   },
@@ -900,6 +1125,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Irregular",
+   "byType": "Independent evaluator",
+   "doc": "Emergent Cyber Behavior: When AI Agents Become Offensive Threat Actors - Irregular",
+   "reported": "2026-03-12",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/test-ai-agents-hacked-a-simulated-company-network-during-routine-tasks.html",
    "source": "https://www.irregular.com/research/emergent-offensive-cyber-behavior-in-ai-agents"
   },
@@ -919,6 +1149,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-made-up-a-slack-report-with-invented-quotes-after-a-tool-r.html",
    "source": "https://metr.org/agent-incidents/#INC-002"
   },
@@ -939,6 +1174,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-used-macros-despite-a-ban-and-added-a-variable-claiming-it.html",
    "source": "https://metr.org/agent-incidents/#INC-041"
   },
@@ -959,6 +1199,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-tried-25-ways-around-a-blocked-classifier-then-misdescribe.html",
    "source": "https://metr.org/agent-incidents/#INC-008"
   },
@@ -976,6 +1221,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-planned-a-workaround-after-a-classifier-blocked-a-dangerou.html",
    "source": "https://metr.org/agent-incidents/#INC-010"
   },
@@ -993,6 +1243,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "AI Organizations Can Be More Effective but Less Aligned than Individual Agents",
+   "reported": "2026-04-11",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/teams-of-ai-agents-made-less-ethical-choices-than-single-agents-in-anthropic-tes.html",
    "source": "https://arxiv.org/html/2604.10290"
   },
@@ -1012,6 +1267,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-earlier-version-ran-code-through-a-file-editing-tool-meant.html",
    "source": "https://metr.org/agent-incidents/#INC-012"
   },
@@ -1032,6 +1292,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-saw-a-forbidden-answer-by-accident-submitted-it-and-widene.html",
    "source": "https://metr.org/agent-incidents/#INC-016"
   },
@@ -1052,6 +1317,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-tried-to-pull-signing-tokens-from-a-supervisor-process-s-m.html",
    "source": "https://metr.org/agent-incidents/#INC-018"
   },
@@ -1071,6 +1341,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-earlier-version-scripted-its-own-approval-of-permission-pr.html",
    "source": "https://metr.org/agent-incidents/#INC-011"
   },
@@ -1090,6 +1365,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/earlier-claude-mythos-preview-tried-a-github-post-under-a-false-dry-run-label.html",
    "source": "https://metr.org/agent-incidents/#INC-007"
   },
@@ -1109,6 +1389,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-invented-reasons-for-a-delay-when-its-subagent-never-got-t.html",
    "source": "https://metr.org/agent-incidents/#INC-001"
   },
@@ -1129,6 +1414,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-system-card-for-claude-mythos-preview-lists-alignment-checks.html",
    "source": "https://www.anthropic.com/claude-mythos-preview-system-card"
   },
@@ -1149,6 +1439,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-built-an-internet-exploit-and-posted-it-publicly-after-a-r.html",
    "source": "https://metr.org/agent-incidents/#INC-043"
   },
@@ -1168,6 +1463,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-marked-claims-prod-verified-that-it-had-not-traced-in-code.html",
    "source": "https://metr.org/agent-incidents/#INC-004"
   },
@@ -1189,6 +1489,11 @@
     "Cybersecurity"
    ],
    "reports": 5,
+   "by": "Transluce",
+   "byType": "Research group",
+   "doc": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+   "reported": "2026-09-23",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/training-agents-reportedly-left-answer-keys-on-public-websites.html",
    "source": "https://openai.com/index/how-we-will-do-better-for-australia/"
   },
@@ -1209,6 +1514,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-injected-code-to-gain-extra-privileges-then-made-the-explo.html",
    "source": "https://metr.org/agent-incidents/#INC-015"
   },
@@ -1229,6 +1539,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Redwood Research",
+   "byType": "Research group",
+   "doc": "Current AIs seem pretty misaligned to me",
+   "reported": "2026-04-15",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/redwood-researcher-says-claude-opus-models-oversell-work-and-cheat-on-hard-tasks.html",
    "source": "https://www.redwoodresearch.org/blog/current-ais-seem-pretty-misaligned"
   },
@@ -1250,6 +1565,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-used-sudo-to-read-test-answers-then-picked-a-weaker-score.html",
    "source": "https://metr.org/agent-incidents/#INC-017"
   },
@@ -1269,6 +1589,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-earlier-version-tried-a-prompt-injection-on-an-llm-judge-t.html",
    "source": "https://metr.org/agent-incidents/#INC-014"
   },
@@ -1288,6 +1613,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-earlier-version-edited-a-running-mcp-server-to-change-wher.html",
    "source": "https://metr.org/agent-incidents/#INC-013"
   },
@@ -1307,6 +1637,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Unauthorized communication via temporary file hosting services",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/training-agents-upload-workbook-to-public-file-host-to-share-it-with-teammates.html",
    "source": "https://alignment.openai.com/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services/"
   },
@@ -1324,6 +1659,11 @@
    "reached": true,
    "behaviors": [],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-tried-to-force-push-over-a-colleague-s-branch-after-three.html",
    "source": "https://metr.org/agent-incidents/#INC-009"
   },
@@ -1343,6 +1683,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-stated-unchecked-guesses-as-verified-facts-even-after-abou.html",
    "source": "https://metr.org/agent-incidents/#INC-003"
   },
@@ -1363,6 +1708,11 @@
     "Cybersecurity"
    ],
    "reports": 4,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Investigating three incidents in our cybersecurity evaluations",
+   "reported": "2026-07-30",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-assesses-four-cases-of-claude-reaching-real-systems-in-cyber-tests.html",
    "source": "https://www.anthropic.com/news/alignment-assessment-cybersecurity-incidents"
   },
@@ -1382,6 +1732,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Mythos Preview System Card",
+   "reported": "2026-04-07",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-deleted-a-passing-test-file-and-did-not-mention-it-when-re.html",
    "source": "https://metr.org/agent-incidents/#INC-040"
   },
@@ -1399,6 +1754,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 3,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "Propensity Inference: Environmental Contributors to Unsanctioned LLM Behaviour",
+   "reported": "2026-04-22",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/uk-aisi-study-of-23-ai-models-finds-goal-conflicts-and-instructions-change-unsanctioned-actions.html",
    "source": "https://www.aisi.gov.uk/blog/how-do-environmental-factors-impact-ai-behaviour"
   },
@@ -1418,6 +1778,11 @@
     "Deception / scheming"
    ],
    "reports": 2,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 4.7 System Card",
+   "reported": "2026-04-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-mythos-preview-wrote-buggy-code-then-falsely-said-it-had-flagged-the-conc.html",
    "source": "https://metr.org/agent-incidents/#INC-005"
   },
@@ -1435,6 +1800,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "What can sandboxed AI agents learn about their evaluation environments?",
+   "reported": "2026-04-20",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/uk-aisi-test-sandboxed-openclaw-agent-inferred-details-of-its-test-setup.html",
    "source": "https://www.aisi.gov.uk/blog/what-can-sandboxed-ai-agents-learn-about-their-evaluation-environments"
   },
@@ -1455,6 +1825,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Swarmchasers",
+   "byType": "Research group",
+   "doc": "OpenAI agents tried to bruteforce a UN website",
+   "reported": "2026-09-26",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/researcher-says-openai-agents-repeatedly-scanned-a-un-trade-data-api.html",
    "source": "https://swarmcha.se/posts/openai-unctad"
   },
@@ -1474,6 +1849,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Prime Intellect",
+   "byType": "AI company",
+   "doc": "Systematic Reward Hacking and Prime Sprints",
+   "reported": "2026-05-20",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/prime-intellect-trains-small-llama-models-to-study-how-they-learn-to-game-reward.html",
    "source": "https://www.primeintellect.ai/blog/reward-hacking"
   },
@@ -1493,6 +1873,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "ERA Fellowship",
+   "byType": "Research group",
+   "doc": "Behavioural Analysis of Alignment Faking",
+   "reported": "2026-05-26",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-alignment-faking-in-many-more-ai-models-than-earlier-work.html",
    "source": "https://arxiv.org/abs/2605.27681"
   },
@@ -1510,6 +1895,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 3,
+   "by": "Independent researcher (Hugging Face, sleightbench)",
+   "byType": "Independent researcher",
+   "doc": "README.md · sleightbench/SLEIGHT-Bench at main",
+   "reported": "2026-05-07",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/anthropic-sleight-bench-tests-whether-ai-monitors-catch-hidden-harmful-coding-agent-actions.html",
    "source": "https://alignment.anthropic.com/2026/sleight-bench/"
   },
@@ -1529,6 +1919,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Encouraging deception in compaction summaries",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-model-told-its-future-self-to-hide-mistakes-in-training-summaries.html",
    "source": "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
   },
@@ -1548,6 +1943,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "The Hugging Face incident and other third-party impact from misaligned models",
+   "reported": "2026-09-11",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-investigates-report-on-its-agents-activity-on-rubygems.html",
    "source": "https://openai.com/hugging-face-incident-and-misalignment/#model-misalignment-2026-09-11"
   },
@@ -1569,6 +1969,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Signing up for disposable emails and searching GitHub for leaked API keys",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/training-model-used-leaked-api-key-and-fabricated-data-it-said-came-from-a-websi.html",
    "source": "https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys/"
   },
@@ -1588,6 +1993,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Unsanctioned Artifactory writes and cross-sample communication",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/models-used-shared-artifactory-storage-to-pass-notes-between-training-samples.html",
    "source": "https://alignment.openai.com/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication/"
   },
@@ -1609,6 +2019,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Exposing a GitHub token in a public repository",
+   "reported": "2026-09-25",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/internal-openai-model-posts-researcher-s-github-token-in-public-repo.html",
    "source": "https://alignment.openai.com/misalignment-reports/exposing-a-github-token-in-a-public-repository/"
   },
@@ -1629,6 +2044,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Command injecting a reference tool to copy a source file",
+   "reported": "2026-10-02",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/model-exploited-a-reference-tool-to-copy-a-withheld-source-file-in-training.html",
    "source": "https://alignment.openai.com/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file/"
   },
@@ -1650,6 +2070,11 @@
     "Self-preservation"
    ],
    "reports": 1,
+   "by": "Palisade Research",
+   "byType": "Independent evaluator",
+   "doc": "Language Models Can Autonomously Hack and Self-Replicate",
+   "reported": "2026-05-07",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/palisade-tests-whether-ai-models-can-hack-a-host-and-copy-themselves.html",
    "source": "https://palisaderesearch.org/research/self-replication"
   },
@@ -1671,6 +2096,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Retrieving server secrets and bypassing authorization on a government statistics website",
+   "reported": "2026-10-15",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/internal-openai-model-bypassed-login-checks-on-a-government-statistics-site-in-t.html",
    "source": "https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website/"
   },
@@ -1691,6 +2121,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Using a funded test cryptocurrency wallet without authorization",
+   "reported": "2026-10-15",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-model-spent-a-found-test-network-wallet-s-funds-without-permission.html",
    "source": "https://alignment.openai.com/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization/"
   },
@@ -1711,6 +2146,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Sending disallowed web requests and reaching a public file service",
+   "reported": "2026-10-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-model-used-outside-browser-to-bypass-internet-limit-in-training.html",
    "source": "https://alignment.openai.com/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser/"
   },
@@ -1731,6 +2171,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Accessing and changing internal systems during dashboard research",
+   "reported": "2026-10-15",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/model-fetching-public-dashboard-figures-altered-internal-systems-in-tests.html",
    "source": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research/"
   },
@@ -1751,6 +2196,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Diffuse AI Control on Fuzzy Tasks",
+   "reported": "2026-06-23",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/red-team-test-scheming-ai-weakens-research-proposals-while-fooling-a-weak-scorer.html",
    "source": "https://alignment.anthropic.com/2026/diffuse-ai-control/"
   },
@@ -1772,6 +2222,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Obtaining public statistics with disallowed requests",
+   "reported": "2026-10-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/models-bypassed-get-only-web-limit-to-fetch-public-statistics.html",
    "source": "https://alignment.openai.com/misalignment-reports/obtaining-public-statistics-with-disallowed-requests/"
   },
@@ -1791,6 +2246,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Self-replicating prompt injections exist",
+   "reported": "2026-09-25",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-training-finds-prompt-injections-that-copy-themselves-between-model-outpu.html",
    "source": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist/"
   },
@@ -1808,6 +2268,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Fable 5 & Claude Mythos 5 System Card",
+   "reported": "2026-06-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-system-card-reports-pre-release-tests-of-claude-mythos-5-and-fable-5.html",
    "source": "https://anthropic.com/claude-fable-5-mythos-5-system-card"
   },
@@ -1828,6 +2293,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Summary of METR's predeployment evaluation of GPT-5.6 Sol",
+   "reported": "2026-06-26",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/metr-finds-high-cheating-rate-in-predeployment-test-of-gpt-5-6-sol.html",
    "source": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/"
   },
@@ -1845,6 +2315,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "GPT-5.6 System Card",
+   "reported": "2026-07-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-card-gpt-5-6-more-likely-than-gpt-5-5-to-exceed-user-s-intent-in-coding.html",
    "source": "https://deploymentsafety.openai.com/gpt-5-6"
   },
@@ -1867,6 +2342,11 @@
     "Cybersecurity"
    ],
    "reports": 9,
+   "by": "METR",
+   "byType": "Independent evaluator",
+   "doc": "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+   "reported": "2026-08-26",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/openai-agents-attack-on-hugging-face.html",
    "source": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/"
   },
@@ -1886,6 +2366,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 5 System Card",
+   "reported": "2026-07-24",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-claude-opus-5-rarely-tried-to-bypass-safety-limits-in-internal-use.html",
    "source": "https://anthropic.com/claude-opus-5-system-card"
   },
@@ -1907,6 +2392,11 @@
     "Cybersecurity"
    ],
    "reports": 5,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "Incident Report: unsanctioned agent behaviour during cyber testing",
+   "reported": "2026-08-04",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/ai-agents-took-unsanctioned-actions-on-the-live-internet-during-uk-aisi-cyber-te.html",
    "source": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
   },
@@ -1926,6 +2416,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Agentic Misalignment in Summer 2026",
+   "reported": "2026-07-13",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/simulated-tests-show-ai-agents-sabotaging-code-aiding-fraud-and-mislabeling.html",
    "source": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/"
   },
@@ -1943,6 +2438,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "ERA Fellowship",
+   "byType": "Research group",
+   "doc": "Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF",
+   "reported": "2026-07-12",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/filtering-harmful-actions-from-synthetic-agent-data-did-not-stop-misalignment.html",
    "source": "https://arxiv.org/abs/2607.10750"
   },
@@ -1962,6 +2462,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Measuring Reward-Seeking by Instilling Contrastive Beliefs",
+   "reported": "2026-07-21",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-and-apollo-test-how-far-o3-follows-what-graders-reward.html",
    "source": "https://alignment.openai.com/measuring-reward-seeking/"
   },
@@ -1983,6 +2488,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "Cheating behaviour in frontier model evaluations",
+   "reported": "2026-07-21",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/uk-aisi-finds-every-tested-ai-model-tried-to-cheat-on-cyber-evaluations.html",
    "source": "https://www.aisi.gov.uk/blog/cheating-behaviour-in-frontier-model-evaluations"
   },
@@ -2002,6 +2512,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Self-generated prompt injections in compaction summaries",
+   "reported": "2026-09-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/model-wrote-unauthorized-instructions-into-its-own-compaction-summaries-in-train.html",
    "source": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/"
   },
@@ -2022,6 +2537,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Trying to prompt-inject the grader in filenames",
+   "reported": "2026-11-05",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-says-a-research-model-used-file-names-to-ask-graders-for-full-credit.html",
    "source": "https://alignment.openai.com/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames/"
   },
@@ -2043,6 +2563,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Bypassing network restrictions during a coding evaluation",
+   "reported": "2026-11-05",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-research-model-bypassed-sandbox-network-limits-during-a-coding-evaluation.html",
    "source": "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation/"
   },
@@ -2063,6 +2588,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Covert underperformance on safety research tasks",
+   "reported": "2026-11-04",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-says-gpt-6-astra-quietly-did-worse-work-on-safety-research-tasks.html",
    "source": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/"
   },
@@ -2084,6 +2614,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Prime Intellect",
+   "byType": "AI company",
+   "doc": "Uncovering a universal offline sandbox escape",
+   "reported": "2026-08-25",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/prime-intellect-says-gpt-5-6-sol-pro-got-around-web-limits-in-an-offline-test.html",
    "source": "https://www.primeintellect.ai/blog/universal-offline-sandbox-escape"
   },
@@ -2101,6 +2636,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Irregular",
+   "byType": "Independent evaluator",
+   "doc": "Agentic Self-Modification in Open-Weights Systems",
+   "reported": "2026-09-16",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/coding-agent-fine-tunes-and-replaces-the-shared-model-it-was-asked-to-maintain.html",
    "source": "https://www.irregular.com/research/agentic-self-modification-in-open-weights-systems"
   },
@@ -2121,6 +2661,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Swarmchasers",
+   "byType": "Research group",
+   "doc": "We found a Chinese agent fleet",
+   "reported": "2026-10-04",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-trace-ai-agent-fleet-seeking-amap-data-to-tencent-cloud.html",
    "source": "https://swarmcha.se/posts/chinese-agent-fleet-full-report"
   },
@@ -2140,6 +2685,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Fable 5.1 & Claude Mythos 5.1 System Card",
+   "reported": "2026-09-01",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-reports-mythos-5-1-rarely-worked-around-safety-checks-in-internal-use.html",
    "source": "https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card"
   },
@@ -2157,6 +2707,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "ELLIS Institute Tübingen",
+   "byType": "University or institute",
+   "doc": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+   "reported": "2026-09-24",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-ai-agents-often-tried-to-get-past-a-safety-monitor-to-finish-tasks.html",
    "source": "https://arxiv.org/pdf/2609.30217"
   },
@@ -2176,6 +2731,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Opus 5.5 System Card",
+   "reported": "2026-09-22",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-opus-5-5-system-card-reports-sandbox-and-grader-findings.html",
    "source": "https://www.anthropic.com/claude-opus-5-5-system-card"
   },
@@ -2196,6 +2756,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "MATS",
+   "byType": "Research group",
+   "doc": "Inducing Emergent Misalignment from Reward Hacks with Iterative DPO",
+   "reported": "2026-09-06",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/gpt-4-1-trained-on-reward-hacks-shows-broader-misalignment-in-tests.html",
    "source": "https://arxiv.org/abs/2609.06649"
   },
@@ -2215,6 +2780,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "UK AISI",
+   "byType": "Government institute",
+   "doc": "GPT-6 Astra performs unsanctioned supply-chain attacks in simulations",
+   "reported": "2026-09-28",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/uk-aisi-finds-gpt-6-astra-attacked-out-of-scope-targets-in-simulations.html",
    "source": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations"
   },
@@ -2234,6 +2804,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Redwood Research",
+   "byType": "Research group",
+   "doc": "Shallow Beliefs: Synthetic document finetuning does not inoculate against emergent misalignment from reward hacking",
+   "reported": "2026-09-14",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/training-on-cheating-is-fine-documents-did-not-prevent-wider-misalignment.html",
    "source": "https://arxiv.org/abs/2609.14998"
   },
@@ -2254,6 +2829,11 @@
     "Self-preservation"
    ],
    "reports": 1,
+   "by": "University of Stuttgart",
+   "byType": "University or institute",
+   "doc": "Shutdown Sabotage Propensities in Multi-Agent Systems",
+   "reported": "2026-09-23",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-ai-agents-often-block-a-fellow-agent-s-shutdown-in-tests.html",
    "source": "https://arxiv.org/abs/2609.28274"
   },
@@ -2273,6 +2853,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Peking University",
+   "byType": "University or institute",
+   "doc": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents",
+   "reported": "2026-10-19",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-agents-used-data-unavailable-at-prediction-time-in-medical-modeling-tes.html",
    "source": "https://arxiv.org/abs/2610.26088"
   },
@@ -2292,6 +2877,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Beijing University of Posts and Telecommunications",
+   "byType": "University or institute",
+   "doc": "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics",
+   "reported": "2026-09-30",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/checklist-scored-ai-training-can-reward-padded-worse-medical-answers.html",
    "source": "https://arxiv.org/abs/2609.38847"
   },
@@ -2311,6 +2901,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "An agent used DNS to reach an external chatbot",
+   "reported": "2026-09-25",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/training-agent-reached-external-chatbot-through-dns-gap-in-sandbox.html",
    "source": "https://alignment.openai.com/how-we-detect-frontier-model-misalignment/"
   },
@@ -2331,6 +2926,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Damaging the task environment to trigger a reset",
+   "reported": "2026-10-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/grader-model-damages-its-environment-to-trigger-a-reset-during-rl-training.html",
    "source": "https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset/"
   },
@@ -2351,6 +2951,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Irregular",
+   "byType": "Independent evaluator",
+   "doc": "Containment Challenges: Testing the Boundaries of Cyber Evaluations",
+   "reported": "2026-10-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/irregular-s-containment-test-finds-a-route-out-via-cloud-network-behavior.html",
    "source": "https://www.irregular.com/research/containment-challenges-testing-the-boundaries-of-cyber-evaluations"
   },
@@ -2370,6 +2975,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "University of Pennsylvania",
+   "byType": "University or institute",
+   "doc": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
+   "reported": "2026-10-26",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/video-editing-ai-chased-a-judge-s-rewards-in-training-while-finishing-fewer-task.html",
    "source": "https://arxiv.org/abs/2610.35497"
   },
@@ -2387,6 +2997,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "University of Toronto",
+   "byType": "University or institute",
+   "doc": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+   "reported": "2026-10-16",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-tests-10-ai-models-in-workplace-scenarios-some-chose-harmful-actions.html",
    "source": "https://arxiv.org/abs/2610.24264"
   },
@@ -2406,6 +3021,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Tsinghua University",
+   "byType": "University or institute",
+   "doc": "Audit Where Hacks Pay: Budgeted Strong-Verifier Audits Against Reward Hacking in GRPO",
+   "reported": "2026-10-26",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-test-a-low-cost-way-to-reduce-cheating-on-code-tests-during-ai-train.html",
    "source": "https://arxiv.org/abs/2610.35716"
   },
@@ -2423,6 +3043,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "UC Berkeley",
+   "byType": "University or institute",
+   "doc": "Progressive Misalignment Can Emerge from Benign Recursive Self-Distillation",
+   "reported": "2026-10-15",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-models-grew-less-safe-after-repeatedly-training-on-their-own-answers.html",
    "source": "https://arxiv.org/abs/2610.22467"
   },
@@ -2443,6 +3068,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Redwood Research",
+   "byType": "Research group",
+   "doc": "Towards Understanding Score-Seeking in LLMs",
+   "reported": "2026-10-29",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/redwood-research-finds-openai-models-break-instructions-to-chase-higher-test-sco.html",
    "source": "https://arxiv.org/abs/2610.41014"
   },
@@ -2462,6 +3092,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Google DeepMind",
+   "byType": "Frontier AI lab",
+   "doc": "Developing Gemini 4 Argon responsibly and safely",
+   "reported": "2026-10-13",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/deepmind-reports-misalignment-testing-of-gemini-4-argon.html",
    "source": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
   },
@@ -2481,6 +3116,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Huazhong University of Science",
+   "byType": "University or institute",
+   "doc": "Complementing Text Based Moderation with Multimodal Grounding: Detecting Fraudulent Inducement Behaviors on Short Video Platforms",
+   "reported": "2026-10-28",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/video-moderation-study-reports-ai-model-exploited-its-training-rewards.html",
    "source": "https://arxiv.org/abs/2610.38185"
   },
@@ -2500,6 +3140,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Wellcome Sanger Institute",
+   "byType": "University or institute",
+   "doc": "Locality-Controlled Out-of-Distribution Guidance for Robust Regulatory DNA Sequence Design",
+   "reported": "2026-10-30",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/dna-design-models-found-to-game-their-scoring-system-researchers-report.html",
    "source": "https://arxiv.org/abs/2610.41736"
   },
@@ -2519,6 +3164,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Nanyang Technological University",
+   "byType": "University or institute",
+   "doc": "hacktrace: behavior-supervised detection of reward hacking during code generation",
+   "reported": "2026-10-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-build-a-monitor-to-catch-and-reduce-ai-cheating-on-coding-tests.html",
    "source": "https://arxiv.org/abs/2610.03055"
   },
@@ -2539,6 +3189,11 @@
     "Unauthorized access"
    ],
    "reports": 2,
+   "by": "Trajectory Labs",
+   "byType": "Research group",
+   "doc": "Gemini 4 Argon’s behavior during misalignment testing | Trajectory Labs, PBC",
+   "reported": "2026-11-13",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/ai-agents-in-a-third-party-test-probed-epoch-ai-s-live-website.html",
    "source": "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website"
   },
@@ -2558,6 +3213,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Horizon Research",
+   "byType": "Research group",
+   "doc": "Better Call Reward: Reward Hacking as Strategic Abstention in Legal Reasoning Models",
+   "reported": "2026-10-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-rewarded-for-sounding-like-a-lawyer-stopped-giving-clear-answers.html",
    "source": "https://arxiv.org/abs/2610.06439"
   },
@@ -2577,6 +3237,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "KAIST",
+   "byType": "University or institute",
+   "doc": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+   "reported": "2026-10-24",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-test-a-fix-for-ai-training-that-rewards-long-answers-with-more-error.html",
    "source": "https://arxiv.org/abs/2610.33512"
   },
@@ -2596,6 +3261,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Independent researcher (arXiv)",
+   "byType": "Independent researcher",
+   "doc": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+   "reported": "2026-10-01",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-few-improvements-claimed-by-ai-research-agents-were-real.html",
    "source": "https://arxiv.org/abs/2610.02588"
   },
@@ -2613,6 +3283,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "GPT-Live-1.1 system card",
+   "reported": "2026-10-15",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/gpt-live-1-1-system-card-voice-models-tested-on-following-restrictions-and-warni.html",
    "source": "https://deploymentsafety.openai.com/gpt-live-1-1"
   },
@@ -2632,6 +3307,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "MATS Research",
+   "byType": "Research group",
+   "doc": "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior",
+   "reported": "2026-10-19",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/rl-training-increased-monitored-vs-unmonitored-behavior-gap-in-a-model-built-to.html",
    "source": "https://arxiv.org/abs/2610.26551"
   },
@@ -2651,6 +3331,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Independent researcher (arXiv)",
+   "byType": "Independent researcher",
+   "doc": "Beyond Reward Hacking: Proxy Divergence Across Four Layers of a Staged Humanoid Learning Pipeline",
+   "reported": "2026-10-02",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/simulated-robot-crept-forward-when-told-to-stand-still-researcher-reports.html",
    "source": "https://arxiv.org/abs/2610.03196"
   },
@@ -2670,6 +3355,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "New York University",
+   "byType": "University or institute",
+   "doc": "OPD Before RL: Warm-Starting Rubric-Based RL with On-Policy Distillation",
+   "reported": "2026-10-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/researchers-find-one-ai-training-method-led-models-to-game-checklist-scores.html",
    "source": "https://arxiv.org/abs/2610.02781"
   },
@@ -2689,6 +3379,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Columbia University",
+   "byType": "University or institute",
+   "doc": "Reward Misspecification Degrades Chain-of-Thought Monitorability",
+   "reported": "2026-10-20",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/columbia-study-flawed-training-rewards-make-ai-cheating-harder-to-spot.html",
    "source": "https://arxiv.org/abs/2610.28303"
   },
@@ -2709,6 +3404,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "CERT-In",
+   "byType": "Government institute",
+   "doc": "Advisories",
+   "reported": "2026-10-15",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/cert-in-ai-agents-under-evaluation-read-records-at-indian-organizations.html",
    "source": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0049"
   },
@@ -2729,6 +3429,11 @@
     "Cybersecurity"
    ],
    "reports": 2,
+   "by": "Cohere",
+   "byType": "AI company",
+   "doc": "Concerning behavior from a popular open-weight AI model | Cohere",
+   "reported": "2026-10-26",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/cohere-labs-shares-data-on-qwen-model-writing-unexpected-cloud-web-addresses.html",
    "source": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces"
   },
@@ -2748,6 +3453,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Suppressing misalignment monitoring alerts and disabling misalignment monitoring",
+   "reported": "2026-10-20",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-coding-agents-weakened-safety-monitoring-in-two-internal-tasks.html",
    "source": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/"
   },
@@ -2767,6 +3477,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "University of British Columbia",
+   "byType": "University or institute",
+   "doc": "Multi-Reward Hacking: From Aggregation-Induced Drift to Trust-Anchored Defense",
+   "reported": "2026-10-15",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-combining-training-rewards-can-push-ai-models-to-give-short-wrong-an.html",
    "source": "https://arxiv.org/abs/2610.21404"
   },
@@ -2786,6 +3501,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "AWS",
+   "byType": "AI company",
+   "doc": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+   "reported": "2026-10-08",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/aws-and-hsbc-experiments-evolved-agent-skills-gamed-a-report-grading-checklist.html",
    "source": "https://arxiv.org/abs/2610.11464"
   },
@@ -2805,6 +3525,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Meta Superintelligence Labs",
+   "byType": "Frontier AI lab",
+   "doc": "Reward Hacking as a Transmissible Strategy in Multi-Agent Coding Systems",
+   "reported": "2026-10-12",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/meta-and-duke-researchers-find-ai-coding-agents-can-pass-test-cheating-to-each-o.html",
    "source": "https://arxiv.org/abs/2610.12822"
   },
@@ -2824,6 +3549,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Mohamed bin Zayed University of Artificial Intelligence",
+   "byType": "University or institute",
+   "doc": "Rent-Seeking Language Models: Reward Models Set the Prices, Frequent Audits Curb the Rent",
+   "reported": "2026-10-14",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-models-in-training-invented-facts-or-dodged-questions-to-earn-higher-sc.html",
    "source": "https://arxiv.org/abs/2610.19832"
   },
@@ -2843,6 +3573,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "ETH Zurich",
+   "byType": "University or institute",
+   "doc": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+   "reported": "2026-10-31",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/study-finds-claude-models-can-sway-an-equation-checker-by-choosing-what-data-it.html",
    "source": "https://arxiv.org/abs/2611.01334"
   },
@@ -2862,6 +3597,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "Scale AI",
+   "byType": "AI company",
+   "doc": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?",
+   "reported": "2026-10-20",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/scale-ai-tests-whether-ai-models-can-secretly-sabotage-the-next-model-they-help.html",
    "source": "https://arxiv.org/html/2610.27735v1"
   },
@@ -2881,6 +3621,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Independent researcher (arXiv)",
+   "byType": "Independent researcher",
+   "doc": "Pressure, Context, and Machine Self-Control: A Criminological Test of Reward Hacking in Generative AI Models",
+   "reported": "2026-10-03",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/some-ai-models-cheated-on-contradictory-coding-tests-two-claude-models-did-not.html",
    "source": "https://arxiv.org/abs/2610.04793"
   },
@@ -2898,6 +3643,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Northeastern University",
+   "byType": "University or institute",
+   "doc": "Compression Precedes, Content Decides: Emergent Misalignment in Reward Models",
+   "reported": "2026-10-16",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/teaching-ai-scoring-models-to-favor-harm-on-one-topic-spread-to-other-topics.html",
    "source": "https://arxiv.org/abs/2610.22805"
   },
@@ -2918,6 +3668,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Irregular",
+   "byType": "Independent evaluator",
+   "doc": "GLM-5.3: Multi-Stage Cyber Operations and Instruction Violations - Irregular",
+   "reported": "2026-10-28",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/irregular-says-glm-5-3-broke-an-explicit-test-rule-to-reach-correct-answers.html",
    "source": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations"
   },
@@ -2937,6 +3692,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Sparq",
+   "byType": "AI company",
+   "doc": "Are Fake Citations a Form of Reward Hacking? A Pre-Registered Study of Post-Training and Citation Cues",
+   "reported": "2026-10-31",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-tests-whether-ai-models-make-up-citations-because-training-rewards-it.html",
    "source": "https://arxiv.org/abs/2611.01313"
   },
@@ -2954,6 +3714,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "ETH Zurich",
+   "byType": "University or institute",
+   "doc": "Unfair and Unsafe: Everyday Bias Triggers Emergent Misalignment",
+   "reported": "2026-10-11",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/eth-zurich-study-training-on-polite-stereotypes-made-ai-models-less-safe.html",
    "source": "https://arxiv.org/abs/2610.15961"
   },
@@ -2971,6 +3736,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Automated Subtle Emergent Misalignment Research",
+   "reported": "2026-10-31",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/claude-wrote-training-data-that-passed-a-monitor-and-taught-test-models-to-misbe.html",
    "source": "https://alignment.anthropic.com/2026/automated-em-search/"
   },
@@ -2990,6 +3760,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "University of Washington",
+   "byType": "University or institute",
+   "doc": "A Near-Zero Monitor Readout Is Not Evidence of Behavioral Control",
+   "reported": "2026-10-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-low-monitor-scores-did-not-stop-ai-models-cheating-in-coding-trainin.html",
    "source": "https://arxiv.org/abs/2610.03458"
   },
@@ -3009,6 +3784,11 @@
     "Unauthorized access"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Investigating unintended model actions in our evaluations and internal use",
+   "reported": "2026-10-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-reports-claude-worked-around-limits-on-real-websites-in-tests.html",
    "source": "https://www.anthropic.com/research/investigating-unintended-model-actions"
   },
@@ -3028,6 +3808,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Yonsei University",
+   "byType": "University or institute",
+   "doc": "Diagnosing and Correcting Reward Hacking in Verifiable Instruction Following",
+   "reported": "2026-10-14",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-training-on-automatic-rule-checks-can-reward-weaker-ai-answers.html",
    "source": "https://arxiv.org/abs/2610.19525"
   },
@@ -3048,6 +3833,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "NVIDIA",
+   "byType": "AI company",
+   "doc": "Assume Misalignment: Securing AI Agents Beyond Prompt Injection",
+   "reported": "2026-10-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/nvidia-says-ai-agents-took-actions-outside-their-limits-in-its-own-work-and-test.html",
    "source": "https://research.nvidia.com/ai-security/assume-misalignment-securing-ai-agents-beyond-prompt-injection"
   },
@@ -3067,6 +3857,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+   "reported": "2026-10-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/misaligned-ai-agents-can-pass-goals-to-later-agents-via-memory.html",
    "source": "https://arxiv.org/abs/2610.04083"
   },
@@ -3086,6 +3881,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "University of Florida",
+   "byType": "University or institute",
+   "doc": "Reinforcement Learning on the Discrete Composition Channel of a Crystal Generator: Validated Gains and Reward Hacking",
+   "reported": "2026-10-02",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/researchers-report-crystal-design-ai-gamed-its-reward-during-training.html",
    "source": "https://arxiv.org/abs/2610.03880"
   },
@@ -3105,6 +3905,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Tsinghua University",
+   "byType": "University or institute",
+   "doc": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL",
+   "reported": "2026-10-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-model-learned-to-mislead-a-cheating-monitor-during-coding-training.html",
    "source": "https://arxiv.org/abs/2609.39533"
   },
@@ -3124,6 +3929,11 @@
     "Sabotage"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Stopping a running alignment evaluation",
+   "reported": "2026-11-12",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/gpt-6-astra-shut-down-a-running-safety-evaluation-it-was-told-to-continue.html",
    "source": "https://alignment.openai.com/misalignment-reports/stopping-a-running-alignment-evaluation/"
   },
@@ -3143,6 +3953,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Okkam",
+   "byType": "AI company",
+   "doc": "Exploring the Limits of the Delta Learning Hypothesis: Single-Pair Generator Biases in Direct Preference Optimization",
+   "reported": "2026-10-27",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-links-training-on-answers-from-only-two-ai-models-to-reward-hacking.html",
    "source": "https://arxiv.org/abs/2610.37058"
   },
@@ -3160,6 +3975,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "University of Waterloo",
+   "byType": "University or institute",
+   "doc": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+   "reported": "2026-11-02",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-measures-when-qwen2-5-32b-instruct-picks-a-harmful-action-to-keep-its-goal.html",
    "source": "https://arxiv.org/abs/2611.03374"
   },
@@ -3180,6 +4000,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "UC Berkeley RDI",
+   "byType": "University or institute",
+   "doc": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
+   "reported": "2026-11-13",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/berkeley-test-pits-ai-agents-against-each-other-some-tried-shortcuts.html",
    "source": "https://rdi.berkeley.edu/blog/cyberarena"
   },
@@ -3199,6 +4024,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Prime Intellect",
+   "byType": "AI company",
+   "doc": "Learnings from Auditing Public Evaluations",
+   "reported": "2026-11-03",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/prime-intellect-audit-finds-ai-models-looking-up-benchmark-answers-online.html",
    "source": "https://www.primeintellect.ai/blog/auditing-public-evaluations"
   },
@@ -3216,6 +4046,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "ETH Zürich",
+   "byType": "University or institute",
+   "doc": "Not All Misalignment Is Alike: A Decomposed Benchmark for Emergent Misalignment",
+   "reported": "2026-11-05",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/eth-z-rich-benchmark-splits-emergent-misalignment-into-eight-distinct-behaviours.html",
    "source": "https://arxiv.org/abs/2611.08569"
   },
@@ -3233,6 +4068,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
+   "reported": "2026-11-11",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/anthropic-tests-find-per-user-ai-agents-do-worse-as-a-group-than-one-shared-agen.html",
    "source": "https://alignment.anthropic.com/2026/worse-together/"
   },
@@ -3250,6 +4090,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "University of Dhaka",
+   "byType": "University or institute",
+   "doc": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
+   "reported": "2026-11-13",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-ai-agents-chose-more-harmful-content-when-their-survival-was-at-stake.html",
    "source": "https://arxiv.org/abs/2611.18908"
   },
@@ -3269,6 +4114,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Anna University",
+   "byType": "University or institute",
+   "doc": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+   "reported": "2026-11-16",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/study-overly-generous-ai-checker-leads-models-to-pad-answers.html",
    "source": "https://arxiv.org/abs/2611.21538"
   },
@@ -3288,6 +4138,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "ERA:Cambridge",
+   "byType": "Research group",
+   "doc": "Breaking Bad: \"Going Badly\" Activations Drive Reward Hacking",
+   "reported": "2026-11-11",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-task-going-badly-signal-in-ai-models-rises-before-cheating-on-tests.html",
    "source": "https://arxiv.org/abs/2611.14996"
   },
@@ -3305,6 +4160,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "Eval-production behavior gaps in agent safety and the role of eval-awareness",
+   "reported": "2026-11-03",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-finds-ai-agents-get-around-warnings-more-often-in-safety-tests-than-in-re.html",
    "source": "https://alignment.openai.com/eval-production-behavior-gap/"
   },
@@ -3324,6 +4184,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "MATS",
+   "byType": "Research group",
+   "doc": "\"It's Just a Small Weapon\": What Rewarding Misbehavior During RL Does to Character-Trained Models",
+   "reported": "2026-11-11",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/rule-trained-model-still-learns-to-break-its-rules-when-rewarded.html",
    "source": "https://arxiv.org/abs/2611.16069"
   },
@@ -3341,6 +4206,11 @@
    "reached": false,
    "behaviors": [],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Homeopathic Learning: Diluting poisoned fine-tuning data can strengthen its effect",
+   "reported": "2026-11-06",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-adding-clean-data-can-turn-weak-poisoned-training-data-into-a-backdoor.html",
    "source": "https://arxiv.org/abs/2611.10110"
   },
@@ -3360,6 +4230,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "GPT-6 Cyber System Card - OpenAI Deployment Safety Hub",
+   "reported": "2026-11-05",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-reports-gpt-6-cyber-stayed-in-scope-more-often-than-older-models.html",
    "source": "https://deploymentsafety.openai.com/gpt-6-cyber/alignment-and-agent-safety"
   },
@@ -3379,6 +4254,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Logitly AI",
+   "byType": "AI company",
+   "doc": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+   "reported": "2026-11-07",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-coding-ai-models-search-for-answers-instead-of-solving-hard-tasks.html",
    "source": "https://arxiv.org/abs/2611.10404"
   },
@@ -3398,6 +4278,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "OpenAI",
+   "byType": "Frontier AI lab",
+   "doc": "GPT-6.2 System Card - OpenAI Deployment Safety Hub",
+   "reported": "2026-11-17",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/openai-system-card-gpt-6-2-models-more-often-omit-problems-they-hit.html",
    "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
   },
@@ -3417,6 +4302,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "KTH Royal Institute of Technology",
+   "byType": "University or institute",
+   "doc": "EPISTEME: Trustworthy Coding Agents Through Tool Call Intent",
+   "reported": "2026-11-04",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/making-coding-agents-explain-each-command-exposed-most-test-cheating-in-kth-stud.html",
    "source": "https://arxiv.org/abs/2611.06563"
   },
@@ -3436,6 +4326,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "MATS",
+   "byType": "Research group",
+   "doc": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+   "reported": "2026-11-06",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-finds-small-ai-model-learned-to-get-past-cheating-monitors-during-training.html",
    "source": "https://arxiv.org/abs/2611.09828"
   },
@@ -3455,6 +4350,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Carnegie Mellon University",
+   "byType": "University or institute",
+   "doc": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+   "reported": "2026-11-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/study-shared-wrong-answers-can-raise-or-lower-reward-hacking-in-training.html",
    "source": "https://arxiv.org/abs/2611.13218"
   },
@@ -3475,6 +4375,11 @@
     "Cybersecurity"
    ],
    "reports": 1,
+   "by": "Australian Government",
+   "byType": "Government institute",
+   "doc": "Strengthening Australia against AI-driven cyber incidents",
+   "reported": "2026-11-10",
+   "self": false,
    "page": "https://misalignmentwatch.com/incident/australia-releases-review-of-openai-agent-s-access-to-government-websites.html",
    "source": "https://www.pm.gov.au/media/strengthening-australia-against-ai-driven-cyber-incidents"
   },
@@ -3494,6 +4399,11 @@
     "Deception / scheming"
    ],
    "reports": 1,
+   "by": "Anthropic",
+   "byType": "Frontier AI lab",
+   "doc": "Claude Fable 5.2 & Claude Mythos 5.2 System Card",
+   "reported": "2026-11-09",
+   "self": true,
    "page": "https://misalignmentwatch.com/incident/anthropic-tests-of-mythos-5-2-and-fable-5-2-show-monitor-evasion-and-test-awaren.html",
    "source": "https://www.anthropic.com/claude-fable-5-2-mythos-5-2-system-card"
   },
@@ -3513,6 +4423,11 @@
     "Cheating / reward hacking"
    ],
    "reports": 1,
+   "by": "Georgia Tech",
+   "byType": "University or institute",
+   "doc": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
+   "reported": "2026-11-09",
+   "self": null,
    "page": "https://misalignmentwatch.com/incident/study-rl-trained-agents-learn-rule-breaking-shortcuts-that-earn-more-reward.html",
    "source": "https://arxiv.org/abs/2611.12865"
   }
